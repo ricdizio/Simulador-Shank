@@ -4,6 +4,7 @@ Description:    Micromouse Version JavaScript
 Created:    15/04/2017 9:51:42 AM
 Last update: 17/04/2017 5:03:42 PM
 Author:     Ricardo Di Zio
+            Gabriel Noya
 */
 
 
