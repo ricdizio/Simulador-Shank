@@ -49,7 +49,8 @@ for(var i=0; i< m; i++){
 
 
 function setup(){
-    createCanvas(ancho+1,alto+1);
+    var canvas = createCanvas(ancho+1,alto+1);
+    canvas.parent('canvas-position');
     background(180);
     frameRate(10);
 
