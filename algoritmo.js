@@ -12,6 +12,9 @@ var img;
 var enabler=0;
 var colaX = 0;
 var colaY = 0;
+var tempXDraw = 0;
+var tempYDraw = 0;
+var GlobalTemp = 1;
 /*
 0: [0,0,0,0];
 1: [0,0,0,1];
@@ -29,7 +32,6 @@ var colaY = 0;
 13: [1,1,0,1];
 14: [1,1,1,0];
 15: [1,1,1,1];
-
 /*
 NSEW = 0
 -SEW = 1
@@ -107,27 +109,52 @@ function draw(){ // este es el main
     // Esta funcion de UserSetWalls debe estar en un while hasta que presionemos un boton (aun no he creado eso).
     UserSetWalls(coordCelda);
 
-    if(enabler==1 && !(colaCoordenadasX.isEmpty())){
+    if(enabler==1  && GlobalTemp==1){
+        // Borrar celda vieja.
         noStroke();
         fill(180);
-        rect((colaX*w),(colaY*w),w,w);
-        stroke(255);
+        rect((tempXDraw*w),(tempYDraw*w),w,w);
         LineasGuia();
         stroke(0);
         PrintWalls(coordCelda);
-        colaX = colaCoordenadasX.pop();
-        colaY = colaCoordenadasY.pop();
-        imgDraw(colaY,colaX);
-        
-        for (var a = 0 ; a<destino.length ; a++) {
-            for(var b = 0 ; b<2 ; b++){
-                if(colaX == destino[a][b] || colaY == destino[a][b]){
-                    alert("Felicidades, Shank llego al centro");
-                }
+
+        if(tempXDraw==colaX && tempYDraw==colaY){
+            if(colaCoordenadasX.isEmpty()==1) {
+                console.log("GlobalTemp 0");
+                GlobalTemp=0;
+            }
+            else{
+                console.log("Actualizando colas");
+                colaX = colaCoordenadasX.pop();
+                colaY = colaCoordenadasY.pop();
             }
         }
-        
+
+        if(tempXDraw!=colaX){
+            GlobalTemp=1;
+            if(tempXDraw<colaX){
+                tempXDraw = Math.round((tempXDraw + 0.2)*100)/100;
+            }
+            else{
+                tempXDraw = Math.round((tempXDraw - 0.2)*100)/100;
+            }
+        }
+        if(tempYDraw!=colaY){
+            GlobalTemp=1;
+            if(tempYDraw<colaY){
+                tempYDraw = Math.round((tempYDraw + 0.2)*100)/100;
+            }
+            else{
+                tempYDraw = Math.round((tempYDraw - 0.2)*100)/100;
+            }
+        }
+        if(GlobalTemp==0) alert("Llegaste al centro del laberinto");
+        console.log("Global Temp:" + GlobalTemp);
+        console.log("colaX:" + colaX + " colaY: " + colaY);
+        console.log("tempx: " + tempXDraw + " tempy: " + tempYDraw);
+        imgDraw(tempYDraw,tempXDraw);
     }
+
     // Resolver el laberinto.
 }
 
@@ -147,9 +174,8 @@ function LineasGuia(){
 
 
 function imgDraw(i,j){
-    
     img.resize(w, w);
-    image(img, j*w, i*w);
+    image(img, j*w, i*w);   
 }
 
 
@@ -163,7 +189,6 @@ function imgDraw(i,j){
     translate(j*w,i*w);
     image(img, 0, 0);
 }
-
 function sleep(milliseconds) {
   var start = new Date().getTime();
   for (var i = 0; i < 1e7; i++) {
@@ -175,8 +200,6 @@ function sleep(milliseconds) {
 
 /*function dibujar(){
     while(!(colaCoordenadasX.isEmpty())){
-
-
         sleep(2500);
     }
 }*/
