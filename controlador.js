@@ -64,7 +64,7 @@ function actualizar(){
 function borrarLaberinto() {
     alert("Se limpiará el maze en pantalla");
     setup();
-    frameRate(0.8);
+    frameRate(10);
     enabler=1;
     X = x;
     Y = y;
