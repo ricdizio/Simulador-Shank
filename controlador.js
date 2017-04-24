@@ -42,7 +42,6 @@ function capturar(){
     else{
         alert("aceptado");
     }
-    return x;
     //console.log("valores x= "+x+" y= "+y);
     //dibujarMaze();
 }

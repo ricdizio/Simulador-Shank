@@ -2,7 +2,7 @@ function Celda(i,j){
     this.i=i;
     this.j=j;
     this.walls = [0,0,0,0]; // 1 hay pared, 0 no. ARRIBA, DERECHA, ABAJO, IZQUIERDA
-    this.visitado = 0;  // 1 ya pasamos por ahi. 0 no hemos pasado.
+
 
     this.show= function(){
         var x = this.j*w;

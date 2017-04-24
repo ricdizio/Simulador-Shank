@@ -66,6 +66,11 @@ var cardinalGlobal = 4;
 var cardinales= [ 1,2,4,8 ];
 //var cardinales= ['north','south','east','west'];
 
+//Coordenada actual global
+var coord_actual_global = new coord();
+coord_actual_global.x = 0;
+coord_actual_global.y = 0;
+
 /*
 //Instrucciones de navegacion
 var instrucciones = new instruction;
@@ -237,15 +242,25 @@ function coordVecina(actual,cardinal) {
   return sig_coord;
 }
 
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+
 /*
 INPUT: void
 OUTOUT: Retorna un int que indica las paredes de la casilla actual
 */
 
 function Haypared() {
-  // Intercambiar x  por y si no funciona 
-  var casilla = CheckWalls(coordCelda[coord_actual.y][coord_actual.x].walls);
-  sleep(2);
+  // Intercambiar x  por y si no funciona
+  console.log("global en x: "+coord_actual_global.x + " global en y: " + coord_actual_global.y);
+  var casilla = CheckWall(coordCelda[coord_actual_global.y][coord_actual_global.x].walls);
+  sleep(5000);
   return casilla;
 }
 
@@ -454,7 +469,7 @@ function floodFillUpdate(actual,destino,movimiento) {
 	      	//Si la celda tiene una coordenada valida y la coordenada no es la meta push en la pila
 	      	if (chequear_esquina(workingCoord) && (!terminado(workingCoord,destino))) {
 	        	coordenadas.push(workingCoord);
-	        	console.log("Coordenada del workingCoord: " + workingCoord.x + " " + workingCoord.y);
+	        	//console.log("Coordenada del workingCoord: " + workingCoord.x + " " + workingCoord.y);
 	      	}
 	    }
   	}
@@ -502,8 +517,8 @@ function flood_fill(destino,actual,movimiento) {
    		sig_cardinal = orientar(coord_actual, cardinal);
    		console.log("decision posible: " + sig_cardinal);
    		var sig_coordenada = coordVecina(coord_actual, sig_cardinal);
-    	console.log("pos x: " + sig_coordenada.x);
-    	console.log("pos y: " + sig_coordenada.y);
+    	//console.log("pos x: " + sig_coordenada.x);
+    	//console.log("pos y: " + sig_coordenada.y);
     	if (movimiento) {
      		 /*
       		crear_instrucciones(actual, sig_cardinal);
@@ -520,7 +535,9 @@ function flood_fill(destino,actual,movimiento) {
       		globalCoord = coord_actual;
     	}
     	printMazewalls();
-    	printMazedistancia();
+    	//printMazedistancia();
+      coord_actual_global.x = coord_actual.x;
+      coord_actual_global.y = coord_actual.y;
     	console.log("Valor cardinal: " + cardinalGlobal);
     	console.log("Valor coord actual x: " + coord_actual.x);
     	console.log("Valor coord actual y: " + coord_actual.y);
