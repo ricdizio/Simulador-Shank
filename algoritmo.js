@@ -121,7 +121,8 @@ function draw(){ // este es el main
 
         if(tempXDraw==colaX && tempYDraw==colaY){
             if(colaCoordenadasX.isEmpty()==1) {
-                GlobalTemp==0;
+                console.log("GlobalTemp 0");
+                GlobalTemp=0;
             }
             else{
                 console.log("Actualizando colas");
@@ -131,7 +132,7 @@ function draw(){ // este es el main
         }
 
         if(tempXDraw!=colaX){
-            GlobalTemp==1;
+            GlobalTemp=1;
             if(tempXDraw<colaX){
                 tempXDraw = Math.round((tempXDraw + 0.2)*100)/100;
             }
@@ -140,7 +141,7 @@ function draw(){ // este es el main
             }
         }
         if(tempYDraw!=colaY){
-            GlobalTemp==1;
+            GlobalTemp=1;
             if(tempYDraw<colaY){
                 tempYDraw = Math.round((tempYDraw + 0.2)*100)/100;
             }
@@ -148,6 +149,7 @@ function draw(){ // este es el main
                 tempYDraw = Math.round((tempYDraw - 0.2)*100)/100;
             }
         }
+        if(GlobalTemp==0) alert("Llegaste al centro del laberinto");
         console.log("Global Temp:" + GlobalTemp);
         console.log("colaX:" + colaX + " colaY: " + colaY);
         console.log("tempx: " + tempXDraw + " tempy: " + tempYDraw);
