@@ -12,6 +12,8 @@ var img;
 var enabler=0;
 var colaX = 0;
 var colaY = 0;
+var tempXDraw = 0;
+var tempYDraw = 0;
 /*
 0: [0,0,0,0];
 1: [0,0,0,1];
@@ -108,16 +110,28 @@ function draw(){ // este es el main
     UserSetWalls(coordCelda);
 
     if(enabler==1 && !(colaCoordenadasX.isEmpty())){
+        // Borrar celda vieja.
         noStroke();
         fill(180);
-        rect((colaX*w),(colaY*w),w,w);
-        stroke(255);
+        rect((tempXDraw*w),(tempYDraw*w),w,w);
         LineasGuia();
         stroke(0);
         PrintWalls(coordCelda);
-        colaX = colaCoordenadasX.pop();
-        colaY = colaCoordenadasY.pop();
-        imgDraw(colaY,colaX);
+
+        if(tempXDraw==colaX && tempYDraw==colaY){
+            console.log("Actualizando colas");
+            colaX = colaCoordenadasX.pop();
+            colaY = colaCoordenadasY.pop();
+        }
+        if(tempXDraw!=colaX){
+            tempXDraw = Math.floor((tempXDraw + 0.2)*100)/100;
+        }
+        if(tempYDraw!=colaY){
+            tempYDraw = Math.floor((tempYDraw + 0.2)*100)/100;
+        }
+        console.log("colaX:" + colaX + " colaY: " + colaY);
+        console.log("tempx: " + tempXDraw + " tempy: " + tempYDraw);
+        imgDraw(tempYDraw,tempXDraw);
     }
 
     // Resolver el laberinto.
@@ -140,7 +154,7 @@ function LineasGuia(){
 
 function imgDraw(i,j){
     img.resize(w, w);
-    image(img, j*w, i*w);
+    image(img, j*w, i*w);   
 }
 
 

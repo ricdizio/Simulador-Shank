@@ -21,7 +21,7 @@ var colaCoordenadasY = new Cola();
 
 
 function action() {
-	frameRate(0.8);
+	frameRate(1);
 	enabler=1;
     X = x;
     Y = y;
