@@ -6,12 +6,14 @@
   "dependencies": {
     "electron": "^1.6.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "electron-packager": "^8.6.0"
+  },
   "scripts": {
     "start": "electron ./",
-    "build-osx": "electron-packager . ShankSimulador --version 1.6.2 --platform darwin --icon ./assets/logo.icns --prune=true --out ./dist --overwrite",
-    "build-linux": "electron-packager . ShankSimulador --version 1.6.2 --platform linux --icon ./assets/logo.png --prune=true --out ./dist --overwrite",
-    "build-win": "electron-packager . ShankSimulador --version 1.6.2 --platform win32 --icon ./assets/logo.ico --prune=true --out ./dist --path ./ --overwrite"
+    "build-osx": "electron-packager . ShankSimulador --version 1.6.5 --platform darwin --prune=true --out ./dist --overwrite",
+    "build-linux": "electron-packager . ShankSimulador --version 1.6.5 --platform linux --prune=true --out ./dist --overwrite",
+    "build-win": "electron-packager . ShankSimulador --version 1.6.5 --platform win32 --prune=true --out ./dist --path ./ --overwrite"
   },
   "repository": {
     "type": "git",
