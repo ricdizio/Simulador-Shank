@@ -70,7 +70,7 @@ N--- = 14
 ---- = 15
 */
 
-function CheckWall(){
+function CheckWall(Pared){
     //N,E,S,W
     if(CompareArrays(Pared,[0,0,0,0])) return 15;
     if(CompareArrays(Pared,[0,0,0,1])) return 7;

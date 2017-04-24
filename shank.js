@@ -249,129 +249,10 @@ function coordVecina(actual,cardinal) {
 INPUT: void
 OUTOUT: Retorna un int que indica las paredes de la casilla actual
 */
+
 function Haypared() {
-  var casilla = 15;
-  var norte = 0;
-  var sur = 0;
-  var este = 0;
-  var oeste = 0;
-  /*
-
-  medir(1) sensor frente
-  medir(3) sensor derecho
-  medir(4) sensor izquierdo
-
-
-
-
-
-  */
-  switch (cardinalGlobal) {
-  case 1:
-    console.log("Cardinal Global hacia el norte");
-    //Si hay pared al frente
-    //Senseores frente
-    console.log("Sensor frente");
-    if (Medir(1)>DelanteroD) {
-      //Norte
-      norte = 1;
-    }
-    //Si hay pared a la derecha del carrito
-    //Sensor derecho
-    console.log("Sensor derecho");
-    if (Medir(3)>ParedD) {
-      //Este
-      este = 4;
-    }
-    //Si hay Pared a la izquierda del carrito
-    //Sensor izquierdo
-    console.log("Sensor izquierdo");
-    if (Medir(4)>ParedI) {
-      //Oeste
-      oeste = 8;
-    }
-    //15 - Valor obtenido
-    casilla -= (norte + este + oeste);
-    break;
-  case 2:
-    console.log("Cardinal Global hacia el sur");
-    //Si hay pared al frente
-    //Senseores frente
-    console.log("Sensor frente");
-    if (Medir(1)>DelanteroD) {
-      //Sur
-      sur = 2;
-    }
-    //Si hay pared a la derecha del carrito
-    //Sensor derecho
-    console.log("Sensor derecho");
-    if (Medir(3)>ParedD) {
-      //Oeste
-      oeste = 8;
-    }
-    //Si hay pared a la izquierda del carrito
-    //Sensor izquierdo
-    console.log("Sensor izquierdo");
-    if (Medir(4)>ParedI) {
-      //Este     
-      este = 4;
-    }
-    //15 - valor obtenido
-    casilla -= (sur + este + oeste);
-    break;
-  case 4:
-    console.log("Cardinal Global hacia el este");
-    //Si hay pared al frente
-    //Senseores frente
-    console.log("Sensor frente");
-    if (Medir(1)>DelanteroD) {
-      //Este
-      este = 4;
-    }
-    //Si hay pared a la derecha del carrito
-    //Sensor derecho
-    console.log("Sensor derecho");
-    if (Medir(3)>ParedD) {
-      //Sur
-      sur = 2;
-    }
-    //Si Hay pared a la izquierda del carrito
-    //Sensor izquierdo
-    console.log("Sensor izquierdo");
-    if (Medir(4)>ParedI) {
-      //Norte
-      norte = 1;
-    }
-    //15 - valor obtenido
-    casilla -= (norte + sur + este);
-    break;
-  case 8:
-    console.log("Cardinal Global hacia el oeste");
-    //Si hay pared al frente
-    //Senseores frente
-    console.log("Sensor frente");
-    if (Medir(1)>DelanteroD) {
-      //Oeste
-      oeste = 8;
-    }
-    //Si Hay pared a la derecha del carrito
-    //Sensor derecho
-    console.log("Sensor derecho");
-    if (Medir(3)>ParedI) {
-      //Norte
-      norte = 1;
-    }
-    //Si hay pared a la izquierda1 del carrito
-    //Sensor izquierdo
-    console.log("Sensor izquierdo");
-    if (Medir(4)>ParedD) {
-      //Sur
-      sur = 2;
-    }
-    //15 - Valor obtenido
-    casilla -= (oeste + norte + sur);
-    break;
-  }
+  var casilla = coordCelda;
+  sleep(2);
   return casilla;
 }
 
@@ -494,13 +375,22 @@ function retorno(coordenada,global){
   }
 }
 
-
+/*
 function Medir (x) { 
   // Wait for user's response. 
   var valor = readlineSync.question('Valor: ');
   console.log('valor introducido ' + valor + '!');
   return valor;
 }
+
+  medir(1) sensor frente
+  medir(3) sensor derecho
+  medir(4) sensor izquierdo
+
+
+
+*/
+
 
 /*
 INPUT: Coord
