@@ -12,6 +12,8 @@ botonAction.addEventListener("click",action);
 botonUpdate.addEventListener("click",actualizar);
 var x = 6;
 var y = 6;
+var tempX = x;
+var tempY = y;
 
 function action() {
     X = x;
@@ -39,14 +41,17 @@ function action() {
 }
 
 function actualizar(){
+    tempX = x;
+    tempY = y;
     var estado = capturar();
-    if(estado){
+    if(estado && !(tempY == y && tempX==x)){
         n = x;
         m = y;
         X = x;
         Y = y;
         setup();
     } 
+    else{alert("No se han modificado las dimensiones");}
 }
 
 function borrarLaberinto() {
@@ -68,13 +73,19 @@ function capturar(){
     // Obtenemos el valor por el id
     y = document.getElementById("dimensionY").value;
     // Obtenemos el valor por el Nombre
-    console.log("x: " + x + " y: " + y);
-    if (x == "" || y == ""){
+    //console.log("X: " + x + " Y: " + y);
+    if (x == "" || y == "")
+    {
         bool = 0;
-        alert("Debe introducir dimensiones");
+        alert("Dimensiones por defecto X:6 , Y:6");
     }
-    else{
-        alert("valor x: "+ x +" valor y: " + y);
+    else if((tempY == x && tempX == x))
+    {
+        bool = 0;
+    }
+    else
+    {
+        alert("valor X: "+ x +" valor X: " + y);
         bool = 1;
     }
     //console.log("valores x= "+x+" y= "+y);
