@@ -143,3 +143,88 @@ function sleep(milliseconds) {
     }
   }
 }
+
+function dibujar(){
+    while(!(colaCoordenadasX.isEmpty())){
+        var colaX = colaCoordenadasX.pop();
+        var colaY = colaCoordenadasY.pop();
+        imgDraw(colaY,colaX);
+        sleep(2500);
+    }
+}
+
+//PILA
+function Stack (){
+    this.top = 0;
+    this.pila = [];
+    //Metodo push para agregar un elemento a la pila
+    this.push = function (elemento) 
+    {
+        this.pila[this.top] = elemento;
+        this.top++;
+    }
+    //Metodo isEmpty Retorna true si la pila no esta vacia
+    //  false en caso contrario
+    this.isEmpty = function()
+    {
+        if(this.top==0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    //Metodo pop retorna el ultimo elemento de la pila en ser agregado
+    this.pop = function()
+    {
+        if(!this.isEmpty())
+        {   
+            this.top--;
+            return this.pila[this.top];
+        }
+        else{
+            return null;
+        }
+    }
+}
+
+
+//PILA
+function Cola (){
+    this.top = 0;
+    this.last = 0;
+    this.cola = [];
+    //Metodo push para agregar un elemento a la pila
+    this.push = function (elemento) 
+    {   
+        this.cola[this.top] = elemento;
+        this.top++;
+    }
+    //Metodo isEmpty Retorna true si la pila no esta vacia
+    //  false en caso contrario
+    this.isEmpty = function()
+    {
+        if(this.last==this.top)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    //Metodo pop retorna el ultimo elemento de la pila en ser agregado
+    this.pop = function()
+    {
+        if(!this.isEmpty())
+        {   
+            this.last++;
+            return this.cola[this.last-1];
+        }
+        else{
+            return null;
+        }
+    }
+}

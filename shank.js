@@ -534,8 +534,9 @@ function flood_fill(destino,actual,movimiento) {
       coord_actual_global.y = coord_actual.y;
 
       
-      setTimeout(imgDraw(coord_actual_global.y,coord_actual_global.x),2500);
-      
+      //setTimeout(imgDraw(coord_actual_global.y,coord_actual_global.x),2500);
+      colaCoordenadasX.push(coord_actual_global.x);
+      colaCoordenadasY.push(coord_actual_global.y);
     	console.log("Valor cardinal: " + cardinalGlobal);
     	console.log("Valor coord actual x: " + coord_actual.x);
     	console.log("Valor coord actual y: " + coord_actual.y);
@@ -572,44 +573,6 @@ function reflood(meta){
   //ejecutar_instrcciones(); 
   
 }
-
-//PILA
-function Stack (){
-	this.top = 0;
-	this.pila = [];
-	//Metodo push para agregar un elemento a la pila
-	this.push = function (elemento) 
-	{
-		this.pila[this.top] = elemento;
-		this.top++;
-	}
-	//Metodo isEmpty Retorna true si la pila no esta vacia
-	//  false en caso contrario
-	this.isEmpty = function()
-	{
-		if(this.top==0)
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
-	}
-	//Metodo pop retorna el ultimo elemento de la pila en ser agregado
-	this.pop = function()
-	{
-		if(!this.isEmpty())
-		{	
-			this.top--;
-			return this.pila[this.top];
-		}
-		else{
-			return null;
-		}
-	}
-}
-
 
 function iniciar() {
   console.log("se prendiooooo");

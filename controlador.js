@@ -16,8 +16,13 @@ var x = 6;
 var y = 6;
 var tempX = x;
 var tempY = y;
+var colaCoordenadasX = new Cola();
+var colaCoordenadasY = new Cola();
+
 
 function action() {
+    noLoop();
+
     X = x;
     Y = y;
     destino = [ [X/2-1,Y/2-1],[X/2,Y/2-1],[X/2-1,Y/2],[X/2,Y/2] ];
@@ -40,6 +45,7 @@ function action() {
     globalEnd.x = 0;
     globalEnd.y = 0;
     iniciar();
+    dibujar();
 }
 
 function actualizar(){
