@@ -9,8 +9,6 @@ Author:     Ricardo Di Zio
 
 
 
-const readlineSync = require('readline-sync');
-
 /*
 NSEW = 0
 -SEW = 1
@@ -251,7 +249,8 @@ OUTOUT: Retorna un int que indica las paredes de la casilla actual
 */
 
 function Haypared() {
-  var casilla = coordCelda;
+  // Intercambiar x  por y si no funciona 
+  var casilla = CheckWalls(coordCelda[coord_actual.y][coord_actual.x].walls);
   sleep(2);
   return casilla;
 }
@@ -602,8 +601,8 @@ function Stack (){
 	}
 }
 
-
-function main() {
+/*
+function iniciar() {
   iniciar_maze();
   printMazedistancia();
   printMazewalls();
@@ -626,5 +625,4 @@ function main() {
 	//console.log("MATRIZ DISTANCIA");
 	//printMazedistancia();
 }
-
-main();
+*/

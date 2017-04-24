@@ -13,6 +13,7 @@ var y;
 
 function action() {
     capturar();
+    //iniciar();
 }
 
 function borrarLaberinto() {
