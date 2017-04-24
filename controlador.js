@@ -4,16 +4,25 @@ var botonPausar = document.getElementById("pause");
 var botonConsola = document.getElementById("console");
 var botonBorrar = document.getElementById("delete");
 var botonAction = document.getElementById("action");
+var botonUpdate = document.getElementById("update");
 botonPausar.addEventListener("click",pausarSimulacion);
 botonConsola.addEventListener("click",abrirConsola);
 botonBorrar.addEventListener("click",borrarLaberinto);
 botonAction.addEventListener("click",capturar);
-var x;
-var y;
+botonUpdate.addEventListener("click",actualizar);
+var x = 6;
+var y = 6;
 
 function action() {
     capturar();
+    actualizar();
     iniciar();
+}
+
+function actualizar(){
+    n = x;
+    m = y;
+    setup();
 }
 
 function borrarLaberinto() {
