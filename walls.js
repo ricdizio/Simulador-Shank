@@ -62,24 +62,25 @@ function UserSetWalls(){
         // Revisar m y n por si estan al reves.
 
         if(mouseY <= (i*w + w/4)){
-            coord[i][j].walls[0]=1;
-            if(i>0) coord[i-1][j].walls[2]=1;
+            coord[i][j].walls[0]=!coord[i][j].walls[0];
+            if(i>0) coord[i-1][j].walls[2]=!coord[i-1][j].walls[2];
         }
 
         else if(mouseX >= ((j+1)*w - w/4)){
-            coord[i][j].walls[1]=1;
-            if(j!=(n-1)) coord[i][j+1].walls[3]=1;
+            coord[i][j].walls[1]=!coord[i][j].walls[1];
+            if(j!=(n-1)) coord[i][j+1].walls[3]=!coord[i][j+1].walls[3];
         }
 
         else if(mouseY >= ((i+1)*w - w/4)){
-            coord[i][j].walls[2]=1;
-            if(i!=(m-1)) coord[i+1][j].walls[0]=1;
+            coord[i][j].walls[2]=!coord[i][j].walls[2];
+            if(i!=(m-1)) coord[i+1][j].walls[0]=!coord[i+1][j].walls[0];
         }
 
         else if(mouseX <= (j*w + w/4)){
-            coord[i][j].walls[3]=1;
-            if(j>0) coord[i][j-1].walls[1]=1;
+            coord[i][j].walls[3]=!coord[i][j].walls[3];
+            if(j>0) coord[i][j-1].walls[1]=!coord[i][j-1].walls[1];
         }
+        LineasGuia();
         stroke(0);
         PrintWalls(coord);
     }
