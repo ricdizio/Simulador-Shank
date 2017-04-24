@@ -582,6 +582,7 @@ function iniciar() {
   //Flood fill	
   flood_fill(destino, globalCoord, true);
   console.log("Llegue al centro, Inicio Retorno");
+  alert("Felicidades. Shank llegó al centro")
  	//Nuevo punto a retorno ( Inicio)
  	//var inicio = new coord();
  	//inicio.x = 0;
