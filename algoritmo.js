@@ -60,9 +60,9 @@ var MazeWalls = [
 
 
 // Revisar los m y n.
-var coord = new Array();
+var coordCelda = new Array();
 for(var i=0; i< m; i++){
-    coord[i]= new Array();
+    coordCelda[i]= new Array();
 }
 
 
@@ -76,24 +76,24 @@ function setup(){
     for(var i=0; i<m; i++){
         for(var j=0; j<n; j++){
             var celda = new Celda(i,j);
-            coord[i][j] = celda;
+            coordCelda[i][j] = celda;
         }
     }
 
     // Posicion actual del carrito.
-    //actual = coord[0][0];
+    //actual = coordCelda[0][0];
     // Dibujamos las lineas guias para que el usuario dibuje su laberinto.
     LineasGuia();
     stroke(0);
-    BorderWalls(coord);
-    PrintWalls(coord);
+    BorderWalls(coordCelda);
+    PrintWalls(coordCelda);
 }
 
 
 function draw(){ // este es el main
     // Llamamos la funcion que permite al usuario dibujar el laberinto.
     // Esta funcion de UserSetWalls debe estar en un while hasta que presionemos un boton (aun no he creado eso).
-    UserSetWalls(coord);
+    UserSetWalls(coordCelda);
 
     // Resolver el laberinto.
 }
