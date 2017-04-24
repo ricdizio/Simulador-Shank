@@ -235,6 +235,17 @@ function Haypared() {
   var sur = 0;
   var este = 0;
   var oeste = 0;
+  /*
+
+  medir(1) sensor frente
+  medir(3) sensor derecho
+  medir(4) sensor izquierdo
+
+
+
+
+
+  */
   switch (cardinalGlobal) {
   case 1:
     console.log("Cardinal Global hacia el norte");

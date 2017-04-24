@@ -16,6 +16,11 @@ h2{
 
 }
 
+.inputs{
+	margin-top: 30px;
+	text-align: center;
+}
+
 .fondo{
 	background-color: #f2f2f2;
 }
