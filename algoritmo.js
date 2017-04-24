@@ -9,6 +9,7 @@ var alto = 600;
 // Tamaño de las celdas.
 var w;
 var img;
+var enabler=0;
 /*
 0: [0,0,0,0];
 1: [0,0,0,1];
@@ -104,6 +105,12 @@ function draw(){ // este es el main
     // Esta funcion de UserSetWalls debe estar en un while hasta que presionemos un boton (aun no he creado eso).
     UserSetWalls(coordCelda);
 
+    if(enabler==1 && !(colaCoordenadasX.isEmpty())){
+        var colaX = colaCoordenadasX.pop();
+        var colaY = colaCoordenadasY.pop();
+        imgDraw(colaY,colaX);
+    }
+
     // Resolver el laberinto.
 }
 
@@ -126,11 +133,9 @@ function imgDraw(i,j){
   console.log("Se llamo a la funcion");
   img.resize(w, w);
   image(img, j*w, i*w);
-  //sleep(2500);
-
 }
 
-function transladar(i,j){
+/*function transladar(i,j){
     translate(j*w,i*w);
     image(img, 0, 0);
 }
@@ -142,16 +147,15 @@ function sleep(milliseconds) {
       break;
     }
   }
-}
+}*/
 
-function dibujar(){
+/*function dibujar(){
     while(!(colaCoordenadasX.isEmpty())){
-        var colaX = colaCoordenadasX.pop();
-        var colaY = colaCoordenadasY.pop();
-        imgDraw(colaY,colaX);
+
+
         sleep(2500);
     }
-}
+}*/
 
 //PILA
 function Stack (){

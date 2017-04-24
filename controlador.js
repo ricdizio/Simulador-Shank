@@ -21,8 +21,8 @@ var colaCoordenadasY = new Cola();
 
 
 function action() {
-    noLoop();
-
+	frameRate(0.8);
+	enabler=1;
     X = x;
     Y = y;
     destino = [ [X/2-1,Y/2-1],[X/2,Y/2-1],[X/2-1,Y/2],[X/2,Y/2] ];
@@ -45,7 +45,6 @@ function action() {
     globalEnd.x = 0;
     globalEnd.y = 0;
     iniciar();
-    dibujar();
 }
 
 function actualizar(){
