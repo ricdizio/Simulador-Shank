@@ -1,6 +1,6 @@
 // Tamaño del laberinto
-var m = 20; // Filas.
-var n = 20; // Columnas.
+var m = 6; // Filas.
+var n = 6; // Columnas.
 
 // Propiedades graficas del canvas. (800x800 como tamaño estandar).
 var ancho = 600;
