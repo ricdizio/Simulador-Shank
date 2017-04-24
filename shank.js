@@ -576,7 +576,6 @@ function reflood(meta){
 
 function iniciar() {
   console.log("se prendiooooo");
-  iniciar_maze();
   printMazedistancia();
   printMazewalls();
   //Flood fill	

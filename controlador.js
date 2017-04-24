@@ -21,7 +21,6 @@ var colaCoordenadasY = new Cola();
 
 
 function action() {
-
 	frameRate(5);
 	enabler=1;
     X = x;
@@ -29,7 +28,6 @@ function action() {
     destino = [ [X/2-1,Y/2-1],[X/2,Y/2-1],[X/2-1,Y/2],[X/2,Y/2] ];
 
     // coordenada de inicio
-    inicio = new coord();
     inicio.x = 0;
     inicio.y = 0;
 
@@ -38,13 +36,14 @@ function action() {
     //var cardinales= ['north','south','east','west'];
 
     //Coordenada actual global
-    coord_actual_global = new coord();
     coord_actual_global.x = 0;
     coord_actual_global.y = 0;
     globalCoord.x = 0;
     globalCoord.y = 0;
     globalEnd.x = 0;
     globalEnd.y = 0;
+    setup();
+    iniciar_maze();
     iniciar();
 }
 
@@ -59,7 +58,8 @@ function actualizar(){
         Y = y;
         setup();
     } 
-    else{alert("No se han modificado las dimensiones");}
+    else{alert("No se han modificado las dimensiones")
+        setup();}
 }
 
 function borrarLaberinto() {
@@ -74,7 +74,6 @@ function borrarLaberinto() {
     destino = [ [X/2-1,Y/2-1],[X/2,Y/2-1],[X/2-1,Y/2],[X/2,Y/2] ];
 
     // coordenada de inicio
-    inicio = new coord();
     inicio.x = 0;
     inicio.y = 0;
 
@@ -83,13 +82,13 @@ function borrarLaberinto() {
     //var cardinales= ['north','south','east','west'];
 
     //Coordenada actual global
-    coord_actual_global = new coord();
     coord_actual_global.x = 0;
     coord_actual_global.y = 0;
     globalCoord.x = 0;
     globalCoord.y = 0;
     globalEnd.x = 0;
     globalEnd.y = 0;
+    setup();
 }
 
 function abrirConsola(){
