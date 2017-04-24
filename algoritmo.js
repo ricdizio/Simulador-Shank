@@ -9,6 +9,8 @@ var alto = 600;
 // Tamaño de las celdas.
 var w;
 
+var canvas = createCanvas(ancho+1,alto+1);
+canvas.parent('canvas-position');
 /*
 0: [0,0,0,0];
 1: [0,0,0,1];
@@ -57,20 +59,19 @@ var MazeWalls = [
 ];*/
 
 
-// Revisar los m y n.
-var coordCelda = new Array();
-for(var i=0; i< m; i++){
-    coordCelda[i]= new Array();
-}
-
 
 
 function setup(){
     w = AdjustCells();
-    var canvas = createCanvas(ancho+1,alto+1);
-    canvas.parent('canvas-position');
     background(180);
     frameRate(10);
+
+    // Revisar los m y n.
+    var coordCelda = new Array();
+    for(var i=0; i< m; i++){
+        coordCelda[i]= new Array();
+    }
+    
     // Creamos los objetos.
     for(var i=0; i<m; i++){
         for(var j=0; j<n; j++){
