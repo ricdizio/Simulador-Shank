@@ -11,6 +11,25 @@ Author:     Ricardo Di Zio
 
 const readlineSync = require('readline-sync');
 
+/*
+NSEW = 0
+-SEW = 1
+N-EW = 2
+NS-W = 4
+NSE- = 8
+NS-- = 12
+--EW = 3
+N--W = 6
+N-E- = 10
+-S-W = 5
+-SE- = 9
+N--- = 14
+-S-- = 13
+--E- = 11
+---W = 7
+---- = 15
+*/
+
 function coord()
 {
 	this.x;
