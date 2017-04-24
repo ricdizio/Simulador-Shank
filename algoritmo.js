@@ -7,9 +7,7 @@ var ancho = 600;
 var alto = 600;
 
 // Tamaño de las celdas.
-var w = AdjustCells();
-var actual; // Posicion actual;
-
+var w;
 
 /*
 0: [0,0,0,0];
@@ -65,20 +63,21 @@ for(var i=0; i< m; i++){
     coordCelda[i]= new Array();
 }
 
+// Creamos los objetos.
+for(var i=0; i<m; i++){
+    for(var j=0; j<n; j++){
+        var celda = new Celda(i,j);
+        coordCelda[i][j] = celda;
+    }
+}
+
 
 function setup(){
+    w = AdjustCells();
     var canvas = createCanvas(ancho+1,alto+1);
     canvas.parent('canvas-position');
     background(180);
     frameRate(10);
-
-    // Creamos los objetos.
-    for(var i=0; i<m; i++){
-        for(var j=0; j<n; j++){
-            var celda = new Celda(i,j);
-            coordCelda[i][j] = celda;
-        }
-    }
 
     // Posicion actual del carrito.
     //actual = coordCelda[0][0];
