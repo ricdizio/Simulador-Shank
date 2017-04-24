@@ -6,12 +6,13 @@
   "dependencies": {
     "electron": "^1.6.5"
   },
-  "devDependencies": {
-    "electron-packager": "^8.6.0"
-  },
+  "devDependencies": {},
   "scripts": {
     "start": "electron ./",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-osx": "electron-packager . ShankSimulador --version 1.6.2 --platform darwin --icon ./assets/logo.icns --prune=true --out ./dist --overwrite",
+    "build-linux": "electron-packager . ShankSimulador --version 1.6.2 --platform linux --icon ./assets/logo.png --prune=true --out ./dist --overwrite",
+    "build-win": "electron-packager . ShankSimulador --version 1.6.2 --platform win32 --icon ./assets/logo.ico --prune=true --out ./dist --path ./ --overwrite",
   },
   "repository": {
     "type": "git",
