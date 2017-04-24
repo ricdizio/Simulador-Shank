@@ -10,6 +10,8 @@ var alto = 600;
 var w;
 var img;
 var enabler=0;
+var colaX = 0;
+var colaY = 0;
 /*
 0: [0,0,0,0];
 1: [0,0,0,1];
@@ -106,8 +108,15 @@ function draw(){ // este es el main
     UserSetWalls(coordCelda);
 
     if(enabler==1 && !(colaCoordenadasX.isEmpty())){
-        var colaX = colaCoordenadasX.pop();
-        var colaY = colaCoordenadasY.pop();
+        noStroke();
+        fill(180);
+        rect((colaX*w),(colaY*w),w,w);
+        stroke(255);
+        LineasGuia();
+        stroke(0);
+        PrintWalls(coordCelda);
+        colaX = colaCoordenadasX.pop();
+        colaY = colaCoordenadasY.pop();
         imgDraw(colaY,colaX);
     }
 
@@ -130,10 +139,17 @@ function LineasGuia(){
 
 
 function imgDraw(i,j){
-  console.log("Se llamo a la funcion");
-  img.resize(w, w);
-  image(img, j*w, i*w);
+    
+    img.resize(w, w);
+    image(img, j*w, i*w);
 }
+
+
+
+
+
+
+
 
 /*function transladar(i,j){
     translate(j*w,i*w);
