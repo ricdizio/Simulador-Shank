@@ -18,11 +18,11 @@
             <h2>SHANK SIMULADOR</h2>
             <form class="form-inline inputs">
               <div class="form-group">
-                <label class="inputEmail3" for="exampleInputEmail3">X:</label>
+                <label class="inputEmail3" for="dimensionX">X:</label>
                 <input class="form-control" id="dimensionX" placeholder="Dimensión X">
               </div>
               <div class="form-group">
-                <label class="inputEmail3" for="exampleInputPassword3">Y:</label>
+                <label class="inputEmail3" for="dimensionY">Y:</label>
                 <input class="form-control" id="dimensionY" placeholder="Dimensión Y">
               </div>
             </form>
@@ -34,12 +34,12 @@
                 <button type="button" id = "console" class="btn btn-warning btn-lg">Consola</button>
               </div>
               <div class=col-xs-4>
-                <button type="button" id = "consola" class="btn btn-danger btn-lg">Borrar</button>
+                <button type="button" id = "delete" class="btn btn-danger btn-lg">Borrar</button>
               </div>
             </div>
             <div class="container-fluid start">
               <div class="col-xs-12">
-                <button type="button" id = "action" class="btn btn-primary btn-lg">Iniciar Simulación</button>
+                <button type="button" id="action" class="btn btn-primary btn-lg">Iniciar Simulación</button>
               </div>
             </div>
         </div>
@@ -50,5 +50,6 @@
             </div>
         </div>
       </div>
+      <script type="text/javascript" src="controlador.js"></script>
   </body>
 </html>

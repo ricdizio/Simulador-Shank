@@ -1,8 +1,5 @@
 
 
-
-
-
 var botonPausar = document.getElementById("pause");
 var botonConsola = document.getElementById("console");
 var botonBorrar = document.getElementById("delete");
@@ -10,7 +7,7 @@ var botonAction = document.getElementById("action");
 botonPausar.addEventListener("click",pausarSimulacion);
 botonConsola.addEventListener("click",abrirConsola);
 botonBorrar.addEventListener("click",borrarLaberinto);
-botonAction.addEventListener("click",botonAction);
+botonAction.addEventListener("click",capturar);
 var x;
 var y;
 
@@ -36,6 +33,7 @@ function capturar(){
     // Obtenemos el valor por el id
     y = document.getElementById("dimensionY").value;
     // Obtenemos el valor por el Nombre
+    console.log("x: " + x + " y: " + y);
     if (x == "" || y == ""){
         alert("Debe introducir dimensiones");
 
