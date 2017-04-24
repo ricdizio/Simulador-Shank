@@ -139,7 +139,6 @@ function LineasGuia(){
 
 
 function imgDraw(i,j){
-    
     img.resize(w, w);
     image(img, j*w, i*w);
 }
