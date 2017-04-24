@@ -13,7 +13,7 @@ h2{
 }
 
 .canvas-style{
-	border: 2px solid #000;
+
 }
 
 .fondo{
@@ -28,25 +28,4 @@ table {
     padding:0;
     border-collapse: collapse;
     border-spacing: 0;
- }
-
-.pared-derecha{
- 	border-right:2px solid #000;
- }
-
-.pared-izquierda{
- 	border-left:2px solid #000;
- }
-
-.pared-arriba{
- 	border-top:2px solid #000;
- }
-
-.pared-abajo{
- 	border-bottom: 2px solid #000;
- }
-
- .img-responsiva{
- 	height: auto;
- 	width: 20px ;
  }
