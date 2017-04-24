@@ -57,6 +57,11 @@ var MazeWalls = [
 ];*/
 
 
+// Revisar los m y n.
+var coordCelda = new Array();
+    for(var i=0; i< m; i++){
+        coordCelda[i]= new Array();
+    }
 
 
 function setup(){
@@ -65,12 +70,6 @@ function setup(){
     w = AdjustCells();
     background(180);
     frameRate(10);
-
-    // Revisar los m y n.
-    var coordCelda = new Array();
-    for(var i=0; i< m; i++){
-        coordCelda[i]= new Array();
-    }
 
     // Creamos los objetos.
     for(var i=0; i<m; i++){
