@@ -5,11 +5,13 @@ var botonConsola = document.getElementById("console");
 var botonBorrar = document.getElementById("delete");
 var botonAction = document.getElementById("action");
 var botonUpdate = document.getElementById("update");
+var botonInstrucciones = document.getElementById("instruction");
 botonPausar.addEventListener("click",pausarSimulacion);
 botonConsola.addEventListener("click",abrirConsola);
 botonBorrar.addEventListener("click",borrarLaberinto);
 botonAction.addEventListener("click",action);
 botonUpdate.addEventListener("click",actualizar);
+botonInstrucciones.addEventListener("click",instructiones);
 var x = 6;
 var y = 6;
 var tempX = x;
@@ -65,6 +67,10 @@ function abrirConsola(){
 
 function pausarSimulacion(){
 
+}
+
+function instructiones() {
+    //Body
 }
 
 function capturar(){
