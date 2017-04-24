@@ -11,24 +11,7 @@ Author:     Ricardo Di Zio
 
 const readlineSync = require('readline-sync');
 
-/*
-NSEW = 0
--SEW = 1
-N-EW = 2
-NS-W = 4
-NSE- = 8
-NS-- = 12
---EW = 3
-N--W = 6
-N-E- = 10
--S-W = 5
--SE- = 9
-N--- = 14
--S-- = 13
---E- = 11
----W = 7
----- = 15
-*/
+
 
 function coord()
 {
@@ -614,7 +597,7 @@ function flood_fill(destino,actual,movimiento) {
 	*/
 	//Mientras no este en la meta !(0) actualizar el maze y moverse a las casillas sig
 	while (maze[coord_actual.y][coord_actual.x].distancia != 0) {
-		floodFillUpdate(coord_actual, destino, movimiento);
+		  floodFillUpdate(coord_actual, destino, movimiento);
    		sig_cardinal = orientar(coord_actual, cardinal);
    		console.log("decision posible: " + sig_cardinal);
    		var sig_coordenada = coordVecina(coord_actual, sig_cardinal);
