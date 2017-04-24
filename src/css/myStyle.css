@@ -7,20 +7,13 @@ h2{
 	text-align: left;
 }
 
-.box {
-	/*background:#4ccae5;*/
-	background:#fff;
-	border-color: red;
-	border-radius: 10px;
-	color:black; 
-	padding: 5px;
-	height: 550px;
-	width: 550px;
-    margin-top: 15px;
-	margin-right: auto;
-	margin-bottom: 5px;
-	margin-left: auto;
-	min-height: .01%;
+.contenedor{
+	margin: 10px;
+	padding: 10px;
+}
+
+.canvas-style{
+	border: 2px solid #000;
 }
 
 .fondo{
