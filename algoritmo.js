@@ -65,6 +65,9 @@ var coordCelda = new Array();
 
 
 function setup(){
+    for(var i=0; i< m; i++){
+        coordCelda[i]= new Array();
+    } 
     var canvas = createCanvas(ancho+1,alto+1);
     canvas.parent('canvas-position');
     w = AdjustCells();

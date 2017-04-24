@@ -51,8 +51,8 @@ function instruction()
 //funcion terminado
 //MODIFICAR SEGUN LA DIMENSION DEL MAZE
 var destino = [ [2,2],[2,3],[3,2],[3,3] ];
-const X = 10;
-const Y = 10;
+var X = 6;
+var Y = 6;
 
 // coordenada de inicio
 var inicio = new coord();
@@ -102,6 +102,7 @@ globalEnd.y = 0;
 
 
 function iniciar_maze() {
+  maze = Create2DArray(X);
   var j;
   var i;
   for(i = 0; i<Y; i++){
