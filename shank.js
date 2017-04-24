@@ -47,7 +47,7 @@ function instruction()
 }
 
 
-//Coordenadas ejes GLobales
+//Coordenadas ejes Globales
 //funcion terminado
 //MODIFICAR SEGUN LA DIMENSION DEL MAZE
 var destino = [ [2,2],[2,3],[3,2],[3,3] ];
@@ -539,6 +539,9 @@ function flood_fill(destino,actual,movimiento) {
     	//printMazedistancia();
       coord_actual_global.x = coord_actual.x;
       coord_actual_global.y = coord_actual.y;
+
+      imgDraw(coord_actual_global.x, coord_actual_global.y);
+      
     	console.log("Valor cardinal: " + cardinalGlobal);
     	console.log("Valor coord actual x: " + coord_actual.x);
     	console.log("Valor coord actual y: " + coord_actual.y);

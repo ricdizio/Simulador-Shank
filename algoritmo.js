@@ -63,6 +63,8 @@ var coordCelda = new Array();
         coordCelda[i]= new Array();
     }
 
+var img = loadImage("carrito.jpg");
+
 
 function setup(){
     for(var i=0; i< m; i++){
@@ -114,3 +116,6 @@ function LineasGuia(){
 }
 
 
+function imgDraw(){
+	image(img, j*w, i*w);
+}
