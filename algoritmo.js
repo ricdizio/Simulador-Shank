@@ -63,13 +63,6 @@ for(var i=0; i< m; i++){
     coordCelda[i]= new Array();
 }
 
-// Creamos los objetos.
-for(var i=0; i<m; i++){
-    for(var j=0; j<n; j++){
-        var celda = new Celda(i,j);
-        coordCelda[i][j] = celda;
-    }
-}
 
 
 function setup(){
@@ -78,7 +71,13 @@ function setup(){
     canvas.parent('canvas-position');
     background(180);
     frameRate(10);
-
+    // Creamos los objetos.
+    for(var i=0; i<m; i++){
+        for(var j=0; j<n; j++){
+            var celda = new Celda(i,j);
+            coordCelda[i][j] = celda;
+        }
+    }
     // Posicion actual del carrito.
     //actual = coordCelda[0][0];
     // Dibujamos las lineas guias para que el usuario dibuje su laberinto.
