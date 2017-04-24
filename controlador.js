@@ -14,10 +14,9 @@ var x = 6;
 var y = 6;
 
 function action() {
-    //actualizar();
-    var destino = [ [2,2],[2,3],[3,2],[3,3] ];
     X = x;
     Y = y;
+    destino = [ [X/2-1,Y/2-1],[X/2,Y/2-1],[X/2-1,Y/2],[X/2,Y/2] ];
 
     // coordenada de inicio
     var inicio = new coord();
@@ -47,7 +46,7 @@ function actualizar(){
         X = x;
         Y = y;
         setup();
-    }   
+    } 
 }
 
 function borrarLaberinto() {
