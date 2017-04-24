@@ -51,6 +51,15 @@ function SetWall(Pared){
     }
 }
 
+function BorderWalls(coord){
+	for(var i=0;i<m; i++){
+		coord[i][0].walls[3] = 1;
+		coord[0][i].walls[0] = 1;
+		coord[i][n-1].walls[1] = 1;
+		coord[m-1][i].walls[2] = 1;
+	}
+}
+
 function UserSetWalls(){
     if(mouseIsPressed && mouseX>=0 && mouseX<ancho && mouseY>=0 && mouseY<alto){ // Con estas condiciones garantizamos que no exista un error al clickear fuera del canvas.
         var i = Math.floor(mouseY / w);

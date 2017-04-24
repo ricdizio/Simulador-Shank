@@ -66,6 +66,9 @@ function setup(){
     actual = coord[0][0];
     // Dibujamos las lineas guias para que el usuario dibuje su laberinto.
     LineasGuia();
+    stroke(0);
+    BorderWalls(coord);
+    PrintWalls(coord);
 }
 
 
