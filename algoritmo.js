@@ -64,18 +64,19 @@ var coordCelda = new Array();
     }
 
 function preload() {
-	img = loadImage("./carrito.jpg");
+	img = loadImage("./base.png");
 }
 
 
 function setup(){
-	 loadImage("./carrito.jpg", function(img) {
+	 loadImage("./base.png", function(img) {
     	image(img, 0, 0);
   	});
 
     for(var i=0; i< m; i++){
         coordCelda[i]= new Array();
     } 
+    img.resize(w*m, w*n);
     var canvas = createCanvas(ancho+1,alto+1);
     canvas.parent('canvas-position');
     w = AdjustCells();
