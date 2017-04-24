@@ -55,6 +55,7 @@ function actualizar(){
 }
 
 function borrarLaberinto() {
+    alert("Se limpiará el maze en pantalla");
     setup();
 }
 
