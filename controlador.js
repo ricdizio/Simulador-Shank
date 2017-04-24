@@ -20,6 +20,7 @@ function action() {
 }
 
 function actualizar(){
+    capturar();
     n = x;
     m = y;
     setup();
@@ -49,7 +50,7 @@ function capturar(){
 
     }
     else{
-        alert("aceptado");
+        alert("valor x: "+ x +" valor y: " + y);
     }
     //console.log("valores x= "+x+" y= "+y);
     //dibujarMaze();
