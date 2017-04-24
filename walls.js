@@ -1,4 +1,4 @@
-function SetWall(Pared){
+/*function SetWall(Pared){
     switch(Pared){
         case 0: 
             return [0,0,0,0];
@@ -49,6 +49,53 @@ function SetWall(Pared){
             return [1,1,1,1];
             break;
     }
+}*/
+
+/*
+NSEW = 0
+-SEW = 1
+N-EW = 2
+NS-W = 4
+NSE- = 8
+NS-- = 12
+--EW = 3
+N--W = 6
+N-E- = 10
+-S-W = 5
+-SE- = 9
+N--- = 14
+-S-- = 13
+--E- = 11
+---W = 7
+---- = 15
+*/
+
+function CheckWall(){
+    //N,E,S,W
+    if(CompareArrays(Pared,[0,0,0,0])) return 15;
+    if(CompareArrays(Pared,[0,0,0,1])) return 7;
+    if(CompareArrays(Pared,[0,0,1,0])) return 13;
+    if(CompareArrays(Pared,[0,0,1,1])) return 5;
+    if(CompareArrays(Pared,[0,1,0,0])) return 11;
+    if(CompareArrays(Pared,[0,1,0,1])) return 3;
+    if(CompareArrays(Pared,[0,1,1,0])) return 9;
+    if(CompareArrays(Pared,[0,1,1,1])) return 1;
+    if(CompareArrays(Pared,[1,0,0,0])) return 14;
+    if(CompareArrays(Pared,[1,0,0,1])) return 6;
+    if(CompareArrays(Pared,[1,0,1,0])) return 12;
+    if(CompareArrays(Pared,[1,0,1,1])) return 4;
+    if(CompareArrays(Pared,[1,1,0,0])) return 10;
+    if(CompareArrays(Pared,[1,1,0,1])) return 2;
+    if(CompareArrays(Pared,[1,1,1,0])) return 8;
+    if(CompareArrays(Pared,[1,1,1,1])) return 0;
+}
+
+
+function CompareArrays(a,b){
+    for(var i=0; i<a.length; i++){
+        if(a[i]!=b[i]) return false;
+    }
+    return true;
 }
 
 function BorderWalls(coord){

@@ -8,7 +8,6 @@ var alto = 600;
 
 // Tamaño de las celdas.
 var w = AdjustCells();
-var WallsReady = 0;
 var actual; // Posicion actual;
 
 
@@ -30,7 +29,26 @@ var actual; // Posicion actual;
 14: [1,1,1,0];
 15: [1,1,1,1];
 
+/*
+NSEW = 0
+-SEW = 1
+N-EW = 2
+NS-W = 4
+NSE- = 8
+NS-- = 12
+--EW = 3
+N--W = 6
+N-E- = 10
+-S-W = 5
+-SE- = 9
+N--- = 14
+-S-- = 13
+--E- = 11
+---W = 7
+---- = 15
+*/
 
+/*
 var MazeWalls = [
     [9,10,10,10,13,12],
     [5,0,0,0,0,5],
@@ -63,7 +81,7 @@ function setup(){
     }
 
     // Posicion actual del carrito.
-    actual = coord[0][0];
+    //actual = coord[0][0];
     // Dibujamos las lineas guias para que el usuario dibuje su laberinto.
     LineasGuia();
     stroke(0);
@@ -82,7 +100,6 @@ function draw(){ // este es el main
 
 function LineasGuia(){
     stroke(255); // Lineas blancas.
-
     for(var i=0; i<m; i++){
         for(var j=0; j<n; j++){
             var x = j*w;
