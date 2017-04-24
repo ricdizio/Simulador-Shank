@@ -76,7 +76,6 @@ function setup(){
     for(var i=0; i< m; i++){
         coordCelda[i]= new Array();
     } 
-    img.resize(w*m, w*n);
     var canvas = createCanvas(ancho+1,alto+1);
     canvas.parent('canvas-position');
     w = AdjustCells();
@@ -98,6 +97,8 @@ function setup(){
     BorderWalls(coordCelda);
     PrintWalls(coordCelda);
 }
+
+img.resize(w*m, w*n);
 
 
 function draw(){ // este es el main
