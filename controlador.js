@@ -21,6 +21,7 @@ var colaCoordenadasY = new Cola();
 
 
 function action() {
+
 	frameRate(0.8);
 	enabler=1;
     X = x;
@@ -65,7 +66,7 @@ function borrarLaberinto() {
     alert("Se limpiará el maze en pantalla");
     setup();
     frameRate(10);
-    enabler=1;
+    enabler=0;
     colaX = 0;
     colaY = 0;
     X = x;

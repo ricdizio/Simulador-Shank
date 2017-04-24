@@ -118,8 +118,16 @@ function draw(){ // este es el main
         colaX = colaCoordenadasX.pop();
         colaY = colaCoordenadasY.pop();
         imgDraw(colaY,colaX);
+        
+        for (var a = 0 ; a<destino.length ; a++) {
+            for(var b = 0 ; b<2 ; b++){
+                if(colaX == destino[a][b] || colaY == destino[a][b]){
+                    alert("Felicidades, Shank llego al centro");
+                }
+            }
+        }
+        
     }
-
     // Resolver el laberinto.
 }
 
