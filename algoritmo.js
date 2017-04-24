@@ -124,10 +124,20 @@ function draw(){ // este es el main
             colaY = colaCoordenadasY.pop();
         }
         if(tempXDraw!=colaX){
-            tempXDraw = Math.floor((tempXDraw + 0.2)*100)/100;
+            if(tempXDraw<colaX){
+                tempXDraw = Math.round((tempXDraw + 0.2)*100)/100;
+            }
+            else{
+                tempXDraw = Math.round((tempXDraw - 0.2)*100)/100;
+            }
         }
         if(tempYDraw!=colaY){
-            tempYDraw = Math.floor((tempYDraw + 0.2)*100)/100;
+            if(tempYDraw<colaY){
+                tempYDraw = Math.round((tempYDraw + 0.2)*100)/100;
+            }
+            else{
+                tempYDraw = Math.round((tempYDraw - 0.2)*100)/100;
+            }
         }
         console.log("colaX:" + colaX + " colaY: " + colaY);
         console.log("tempx: " + tempXDraw + " tempy: " + tempYDraw);
