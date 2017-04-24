@@ -70,19 +70,21 @@ function preload() {
 
 function setup(){
 	 loadImage("./base.png", function(img) {
-    	image(img, 0, 0);
+    	imgDraw(0,0);
+
   	});
 
     for(var i=0; i< m; i++){
         coordCelda[i]= new Array();
-    } 
-    img.resize(w*m, w*n);
+    }
+
     var canvas = createCanvas(ancho+1,alto+1);
+
     canvas.parent('canvas-position');
     w = AdjustCells();
     background(180);
     frameRate(10);
-
+    //img.resize(50, 100);
     // Creamos los objetos.
     for(var i=0; i<m; i++){
         for(var j=0; j<n; j++){
@@ -124,5 +126,6 @@ function LineasGuia(){
 
 
 function imgDraw(i,j){
+	img.resize(200, 200);
 	image(img, j*w, i*w);
 }
