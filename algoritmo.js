@@ -69,11 +69,6 @@ function preload() {
 
 
 function setup(){
-	 loadImage("./base.png", function(img) {
-    	imgDraw(0,0);
-
-  	});
-
     for(var i=0; i< m; i++){
         coordCelda[i]= new Array();
     }
@@ -82,6 +77,9 @@ function setup(){
 
     canvas.parent('canvas-position');
     w = AdjustCells();
+    loadImage("./base.png", function(img) {
+        imgDraw(0,0);
+    });
     background(180);
     frameRate(10);
     //img.resize(50, 100);
@@ -126,6 +124,12 @@ function LineasGuia(){
 
 
 function imgDraw(i,j){
-	img.resize(200, 200);
+    console.log("Se llamo a la funcion");
+	img.resize(w, w);
 	image(img, j*w, i*w);
+}
+
+function transladar(i,j){
+    translate(j*w,i*w);
+    image(img, 0, 0);
 }
