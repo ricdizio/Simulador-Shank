@@ -28,7 +28,6 @@ N--- = 14
 ---- = 15
 */
 
-
 function coord()
 {
 	this.x;
@@ -96,11 +95,6 @@ globalCoord.y = 0;
 globalEnd.x = 0;
 globalEnd.y = 0;
 
-function setup() {
-  //Serial.begin(9600);
-  iniciar_maze();
-  printMazewalls();
-}
 
 function iniciar_maze() {
   var j;
@@ -601,8 +595,9 @@ function Stack (){
 	}
 }
 
-/*
+
 function iniciar() {
+  console.log("se prendiooooo");
   iniciar_maze();
   printMazedistancia();
   printMazewalls();
@@ -625,4 +620,3 @@ function iniciar() {
 	//console.log("MATRIZ DISTANCIA");
 	//printMazedistancia();
 }
-*/
