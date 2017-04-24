@@ -8,7 +8,7 @@ var alto = 600;
 
 // Tamaño de las celdas.
 var w;
-
+var img;
 /*
 0: [0,0,0,0];
 1: [0,0,0,1];
@@ -63,10 +63,16 @@ var coordCelda = new Array();
         coordCelda[i]= new Array();
     }
 
-var img = loadImage("carrito.jpg");
+function preload() {
+	img = loadImage("./carrito.jpg");
+}
 
 
 function setup(){
+	 loadImage("./carrito.jpg", function(img) {
+    	image(img, 0, 0);
+  	});
+
     for(var i=0; i< m; i++){
         coordCelda[i]= new Array();
     } 
@@ -116,6 +122,6 @@ function LineasGuia(){
 }
 
 
-function imgDraw(){
+function imgDraw(i,j){
 	image(img, j*w, i*w);
 }
