@@ -77,9 +77,9 @@ function setup(){
 
     canvas.parent('canvas-position');
     w = AdjustCells();
-    loadImage("./base.png", function(img) {
-        imgDraw(0,0);
-    });
+    //loadImage("./base.png", function(img) {
+        //imgDraw(0,0); 
+    //});
     background(180);
     frameRate(10);
     //img.resize(50, 100);
@@ -124,10 +124,11 @@ function LineasGuia(){
 
 
 function imgDraw(i,j){
-    console.log("Se llamo a la funcion");
-  img.resize(w, w);
-  image(img, j*w, i*w);
-  frameRate(10);
+  console.log("Se llamo a la funcion");
+  //img.resize(w, w);
+  //image(img, j*w, i*w);
+  stroke(0);
+  rect(j*w,i*w,w,w);
 }
 
 function transladar(i,j){
