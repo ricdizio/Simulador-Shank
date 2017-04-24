@@ -14,6 +14,7 @@ var colaX = 0;
 var colaY = 0;
 var tempXDraw = 0;
 var tempYDraw = 0;
+var GlobalTemp = 1;
 /*
 0: [0,0,0,0];
 1: [0,0,0,1];
@@ -109,7 +110,7 @@ function draw(){ // este es el main
     // Esta funcion de UserSetWalls debe estar en un while hasta que presionemos un boton (aun no he creado eso).
     UserSetWalls(coordCelda);
 
-    if(enabler==1 && !(colaCoordenadasX.isEmpty())){
+    if(enabler==1  && GlobalTemp==1){
         // Borrar celda vieja.
         noStroke();
         fill(180);
@@ -119,11 +120,18 @@ function draw(){ // este es el main
         PrintWalls(coordCelda);
 
         if(tempXDraw==colaX && tempYDraw==colaY){
-            console.log("Actualizando colas");
-            colaX = colaCoordenadasX.pop();
-            colaY = colaCoordenadasY.pop();
+            if(colaCoordenadasX.isEmpty()==1) {
+                GlobalTemp==0;
+            }
+            else{
+                console.log("Actualizando colas");
+                colaX = colaCoordenadasX.pop();
+                colaY = colaCoordenadasY.pop();
+            }
         }
+
         if(tempXDraw!=colaX){
+            GlobalTemp==1;
             if(tempXDraw<colaX){
                 tempXDraw = Math.round((tempXDraw + 0.2)*100)/100;
             }
@@ -132,6 +140,7 @@ function draw(){ // este es el main
             }
         }
         if(tempYDraw!=colaY){
+            GlobalTemp==1;
             if(tempYDraw<colaY){
                 tempYDraw = Math.round((tempYDraw + 0.2)*100)/100;
             }
@@ -139,6 +148,7 @@ function draw(){ // este es el main
                 tempYDraw = Math.round((tempYDraw - 0.2)*100)/100;
             }
         }
+        console.log("Global Temp:" + GlobalTemp);
         console.log("colaX:" + colaX + " colaY: " + colaY);
         console.log("tempx: " + tempXDraw + " tempy: " + tempYDraw);
         imgDraw(tempYDraw,tempXDraw);
