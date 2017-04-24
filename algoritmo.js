@@ -11,6 +11,7 @@ var w = AdjustCells();
 var WallsReady = 0;
 var actual; // Posicion actual;
 
+
 /*
 0: [0,0,0,0];
 1: [0,0,0,1];
@@ -50,6 +51,7 @@ for(var i=0; i< m; i++){
 function setup(){
     createCanvas(ancho+1,alto+1);
     background(180);
+    frameRate(10);
 
     // Creamos los objetos.
     for(var i=0; i<m; i++){
