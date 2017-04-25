@@ -507,7 +507,7 @@ function flood_fill(destino,actual,movimiento) {
 	*/
 	//Mientras no este en la meta !(0) actualizar el maze y moverse a las casillas sig
 	while (maze[coord_actual.y][coord_actual.x].distancia != 0) {
-		  floodFillUpdate(coord_actual, destino, movimiento);
+		floodFillUpdate(coord_actual, destino, movimiento);
    		sig_cardinal = orientar(coord_actual, cardinal);
    		console.log("decision posible: " + sig_cardinal);
    		var sig_coordenada = coordVecina(coord_actual, sig_cardinal);
@@ -537,6 +537,7 @@ function flood_fill(destino,actual,movimiento) {
       //setTimeout(imgDraw(coord_actual_global.y,coord_actual_global.x),2500);
       colaCoordenadasX.push(coord_actual_global.x);
       colaCoordenadasY.push(coord_actual_global.y);
+      colaCardinalGlobal.push(cardinalGlobal);
     	console.log("Valor cardinal: " + cardinalGlobal);
     	console.log("Valor coord actual x: " + coord_actual.x);
     	console.log("Valor coord actual y: " + coord_actual.y);
