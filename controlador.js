@@ -50,6 +50,7 @@ function action() {
 function actualizar(){
     tempX = x;
     tempY = y;
+    borrarLaberinto();
     var estado = capturar();
     if(estado && !(tempY == y && tempX==x)){
         n = x;
