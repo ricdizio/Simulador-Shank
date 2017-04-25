@@ -42,7 +42,7 @@ function action() {
     globalCoord.y = 0;
     globalEnd.x = 0;
     globalEnd.y = 0;
-    setup();
+    //setup();
     iniciar_maze();
     iniciar();
 }

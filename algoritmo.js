@@ -69,7 +69,7 @@ var coordCelda = new Array();
     }
 
 function preload() {
-  img = loadImage("./base.png");
+  img = loadImage("./shank.png");
 }
 
 
@@ -82,7 +82,7 @@ function setup(){
 
     canvas.parent('canvas-position');
     w = AdjustCells();
-    loadImage("./base.png", function(img) {
+    loadImage("./shank.png", function(img) {
         imgDraw(0,0); 
     });
     background(180);
