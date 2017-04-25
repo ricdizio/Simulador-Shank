@@ -18,11 +18,11 @@ var tempX = x;
 var tempY = y;
 var colaCoordenadasX = new Cola();
 var colaCoordenadasY = new Cola();
-
+var colaCardinalGlobal = new Cola();
 
 function action() {
 	frameRate(5);
-	enabler=1;
+	SimulationStart=1;
     X = x;
     Y = y;
     destino = [ [X/2-1,Y/2-1],[X/2,Y/2-1],[X/2-1,Y/2],[X/2,Y/2] ];
@@ -64,11 +64,13 @@ function actualizar(){
 
 function borrarLaberinto() {
     alert("Se limpiará el maze en pantalla");
-    setup();
-    frameRate(10);
-    enabler=0;
+    SimulationStart=0;
     colaX = 0;
     colaY = 0;
+    colaCardinal = 4;
+    tempXDraw = 0;
+    tempYDraw = 0;
+    GlobalTemp = 1;
     X = x;
     Y = y;
     destino = [ [X/2-1,Y/2-1],[X/2,Y/2-1],[X/2-1,Y/2],[X/2,Y/2] ];

@@ -9,12 +9,13 @@ var alto = 600;
 // Tamaño de las celdas.
 var w;
 var img;
-var enabler=0;
+var SimulationStart=0;
 var colaX = 0;
 var colaY = 0;
 var tempXDraw = 0;
 var tempYDraw = 0;
 var GlobalTemp = 1;
+var colaCardinal = 4;
 /*
 0: [0,0,0,0];
 1: [0,0,0,1];
@@ -69,7 +70,10 @@ var coordCelda = new Array();
     }
 
 function preload() {
-  img = loadImage("./shank.png");
+	imgNorte = loadImage("./shankNorte.png");
+	imgSur = loadImage("./shankSur.png");
+    imgEste = loadImage("./shankEste.png");
+    imgOeste = loadImage("./shankOeste.png");
 }
 
 
@@ -82,7 +86,7 @@ function setup(){
 
     canvas.parent('canvas-position');
     w = AdjustCells();
-    loadImage("./shank.png", function(img) {
+    loadImage("./shankEste.png", function(img) {
         imgDraw(0,0); 
     });
     background(180);
@@ -109,7 +113,7 @@ function draw(){ // este es el main
     // Esta funcion de UserSetWalls debe estar en un while hasta que presionemos un boton (aun no he creado eso).
     UserSetWalls(coordCelda);
 
-    if(enabler==1  && GlobalTemp==1){
+    if(SimulationStart==1  && GlobalTemp==1){
         // Borrar celda vieja.
         noStroke();
         fill(180);
@@ -127,6 +131,7 @@ function draw(){ // este es el main
                 console.log("Actualizando colas");
                 colaX = colaCoordenadasX.pop();
                 colaY = colaCoordenadasY.pop();
+                colaCardinal = colaCardinalGlobal.pop();
             }
         }
 
@@ -152,7 +157,7 @@ function draw(){ // este es el main
         console.log("Global Temp:" + GlobalTemp);
         console.log("colaX:" + colaX + " colaY: " + colaY);
         console.log("tempx: " + tempXDraw + " tempy: " + tempYDraw);
-        imgDraw(tempYDraw,tempXDraw);
+        imgDraw(tempYDraw, tempXDraw);
     }
 
     // Resolver el laberinto.
@@ -174,8 +179,23 @@ function LineasGuia(){
 
 
 function imgDraw(i,j){
-    img.resize(w, w);
-    image(img, j*w, i*w);   
+    if(colaCardinal == 1){
+        imgNorte.resize(w, w);
+        image(imgNorte, j*w, i*w);    
+    }
+    else if(colaCardinal == 2){
+        imgSur.resize(w, w);
+        image(imgSur, j*w, i*w);    
+    }
+    else if(colaCardinal == 4){
+        imgEste.resize(w, w);
+        image(imgEste, j*w, i*w);    
+    }
+    else if(colaCardinal == 8){
+        imgOeste.resize(w, w);
+        image(imgOeste, j*w, i*w);    
+    }
+  
 }
 
 
