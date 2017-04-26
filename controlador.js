@@ -51,6 +51,7 @@ function action() {
         colaCoordenadasX.cola = new Array();
         this.innerText = "Simulacion iniciada";
         this.className = "btn btn-default btn-lg";
+        botonUpdate.className = "btn btn-default btn-lg";
         disable = 0;
         iniciar_maze();
         iniciar();
@@ -62,20 +63,25 @@ function action() {
 }
 
 function actualizar(){
-    tempX = x;
-    tempY = y;
-    disable = 1;
-    borrarLaberinto();
-    var estado = capturar();
-    if(estado && !(tempY == y && tempX==x)){
-        n = x;
-        m = y;
-        X = x;
-        Y = y;
-        setup();
-    } 
-    else{alert("No se han modificado las dimensiones")
-        //setup();
+    if (disable==1){
+        tempX = x;
+        tempY = y;
+        disable = 1;
+        borrarLaberinto();
+        var estado = capturar();
+        if(estado && !(tempY == y && tempX==x)){
+            n = x;
+            m = y;
+            X = x;
+            Y = y;
+            setup();
+        } 
+        else{alert("No se han modificado las dimensiones")
+            //setup();
+        }
+    }
+    else{
+        //No hacer nada
     }
 }
 
@@ -83,6 +89,7 @@ function borrarLaberinto() {
     alert("Se limpiará el maze en pantalla");
     botonAction.className = "btn btn-primary btn-lg";
     botonAction.innerText = "Iniciar Simulacion";
+    botonUpdate.className = "btn btn-success btn-lg";
     SimulationStart=0;
     disable = 1;
     colaX = 0;
