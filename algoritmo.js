@@ -153,7 +153,12 @@ function draw(){ // este es el main
                 tempYDraw = Math.round((tempYDraw - 0.2)*100)/100;
             }
         }
-        if(GlobalTemp==0 && colaX != 0 && colaY != 0) alert("Llegaste al centro del laberinto"); // Cuidado con el 0 0
+        if(GlobalTemp==0 && colaX != 0 && colaY != 0){
+            alert("Llegaste al centro del laberinto"); // Cuidado con el 0 0
+            botonAction.innerText = "Simulacion Terminada";
+            botonAction.className = "btn btn-success btn-lg";
+
+        } 
         console.log("Global Temp:" + GlobalTemp);
         console.log("colaX:" + colaX + " colaY: " + colaY);
         console.log("tempx: " + tempXDraw + " tempy: " + tempYDraw);

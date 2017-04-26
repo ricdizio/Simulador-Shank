@@ -19,39 +19,52 @@ var tempY = y;
 var colaCoordenadasX = new Cola();
 var colaCoordenadasY = new Cola();
 var colaCardinalGlobal = new Cola();
+var disable = 1; // variable que indica si se activa la simulacion desativa el boton
+// de iniciar simulacion (para el boton de iniciar simulacion)
 
 function action() {
-	frameRate(5);
-	SimulationStart=1;
-    X = x;
-    Y = y;
-    destino = [ [X/2-1,Y/2-1],[X/2,Y/2-1],[X/2-1,Y/2],[X/2,Y/2] ];
+    if(disable==1){
+    	frameRate(5);
 
-    // coordenada de inicio
-    inicio.x = 0;
-    inicio.y = 0;
+    	SimulationStart=1;
+        X = x;
+        Y = y;
+        destino = [ [X/2-1,Y/2-1],[X/2,Y/2-1],[X/2-1,Y/2],[X/2,Y/2] ];
 
-    // Cardinal
-    cardinalGlobal = 4;
-    //var cardinales= ['north','south','east','west'];
+        // coordenada de inicio
+        inicio.x = 0;
+        inicio.y = 0;
 
-    //Coordenada actual global
-    coord_actual_global.x = 0;
-    coord_actual_global.y = 0;
-    globalCoord.x = 0;
-    globalCoord.y = 0;
-    globalEnd.x = 0;
-    globalEnd.y = 0;
-    //setup();
-    colaCoordenadasY.cola = new Array();
-    colaCoordenadasX.cola = new Array();
-    iniciar_maze();
-    iniciar();
+        // Cardinal
+        cardinalGlobal = 4;
+        //var cardinales= ['north','south','east','west'];
+
+        //Coordenada actual global
+        coord_actual_global.x = 0;
+        coord_actual_global.y = 0;
+        globalCoord.x = 0;
+        globalCoord.y = 0;
+        globalEnd.x = 0;
+        globalEnd.y = 0;
+        //setup();
+        colaCoordenadasY.cola = new Array();
+        colaCoordenadasX.cola = new Array();
+        this.innerText = "Simulacion iniciada";
+        this.className = "btn btn-default btn-lg";
+        disable = 0;
+        iniciar_maze();
+        iniciar();
+    }
+    else{
+        // No hacer nada
+    }
+
 }
 
 function actualizar(){
     tempX = x;
     tempY = y;
+    disable = 1;
     borrarLaberinto();
     var estado = capturar();
     if(estado && !(tempY == y && tempX==x)){
@@ -68,7 +81,10 @@ function actualizar(){
 
 function borrarLaberinto() {
     alert("Se limpiará el maze en pantalla");
+    botonAction.className = "btn btn-primary btn-lg";
+    botonAction.innerText = "Iniciar Simulacion";
     SimulationStart=0;
+    disable = 1;
     colaX = 0;
     colaY = 0;
     colaCardinal = 4;
@@ -137,3 +153,4 @@ function capturar(){
     //dibujarMaze();
     return bool;
 }
+
