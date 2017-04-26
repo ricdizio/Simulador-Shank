@@ -21,6 +21,7 @@ var colaCoordenadasY = new Cola();
 var colaCardinalGlobal = new Cola();
 var disable = 1; // variable que indica si se activa la simulacion desativa el boton
 // de iniciar simulacion (para el boton de iniciar simulacion)
+var deshabilitarBorrar = 1;
 
 function action() {
     if(disable==1){
@@ -52,7 +53,10 @@ function action() {
         this.innerText = "Simulacion iniciada";
         this.className = "btn btn-default btn-lg";
         botonUpdate.className = "btn btn-default btn-lg";
+        botonBorrar.className = "btn btn-default btn-lg";
+        botonPausar.className = "btn btn-danger btn-lg";
         disable = 0;
+        deshabilitarBorrar = 0;
         iniciar_maze();
         iniciar();
     }
@@ -86,40 +90,45 @@ function actualizar(){
 }
 
 function borrarLaberinto() {
-    alert("Se limpiará el maze en pantalla");
-    botonAction.className = "btn btn-primary btn-lg";
-    botonAction.innerText = "Iniciar Simulacion";
-    botonUpdate.className = "btn btn-success btn-lg";
-    SimulationStart=0;
-    disable = 1;
-    colaX = 0;
-    colaY = 0;
-    colaCardinal = 4;
-    tempXDraw = 0;
-    tempYDraw = 0;
-    GlobalTemp = 1;
-    X = x;
-    Y = y;
-    destino = [ [X/2-1,Y/2-1],[X/2,Y/2-1],[X/2-1,Y/2],[X/2,Y/2] ];
+    if (deshabilitarBorrar==1){
+        alert("Se limpiará el maze en pantalla");
+        botonAction.className = "btn btn-primary btn-lg";
+        botonAction.innerText = "Iniciar Simulacion";
+        botonUpdate.className = "btn btn-success btn-lg";
+        SimulationStart=0;
+        disable = 1;
+        colaX = 0;
+        colaY = 0;
+        colaCardinal = 4;
+        tempXDraw = 0;
+        tempYDraw = 0;
+        GlobalTemp = 1;
+        X = x;
+        Y = y;
+        destino = [ [X/2-1,Y/2-1],[X/2,Y/2-1],[X/2-1,Y/2],[X/2,Y/2] ];
 
-    // coordenada de inicio
-    inicio.x = 0;
-    inicio.y = 0;
+        // coordenada de inicio
+        inicio.x = 0;
+        inicio.y = 0;
 
-    // Cardinal
-    cardinalGlobal = 4;
-    //var cardinales= ['north','south','east','west'];
+        // Cardinal
+        cardinalGlobal = 4;
+        //var cardinales= ['north','south','east','west'];
 
-    //Coordenada actual global
-    coord_actual_global.x = 0;
-    coord_actual_global.y = 0;
-    globalCoord.x = 0;
-    globalCoord.y = 0;
-    globalEnd.x = 0;
-    globalEnd.y = 0;
-    colaCoordenadasY.cola = new Array();
-    colaCoordenadasX.cola = new Array();
-    setup();
+        //Coordenada actual global
+        coord_actual_global.x = 0;
+        coord_actual_global.y = 0;
+        globalCoord.x = 0;
+        globalCoord.y = 0;
+        globalEnd.x = 0;
+        globalEnd.y = 0;
+        colaCoordenadasY.cola = new Array();
+        colaCoordenadasX.cola = new Array();
+        setup();
+    }
+    else{
+        //No hacer nada
+    }
 }
 
 function abrirConsola(){

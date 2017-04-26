@@ -157,6 +157,9 @@ function draw(){ // este es el main
             alert("Llegaste al centro del laberinto"); // Cuidado con el 0 0
             botonAction.innerText = "Simulacion Terminada";
             botonAction.className = "btn btn-success btn-lg";
+            botonBorrar.className = "btn btn-danger btn-lg";
+            botonPausar.className = "btn btn-default btn-lg";
+            deshabilitarBorrar = 1;
 
         } 
         console.log("Global Temp:" + GlobalTemp);
