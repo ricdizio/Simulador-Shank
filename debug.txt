@@ -1,0 +1,1004 @@
+algoritmo.js:159 tempx: 7.8 tempy: 8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:8 colaY: 8
+algoritmo.js:159 tempx: 8 tempy: 8
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:8 colaY: 7
+algoritmo.js:159 tempx: 8 tempy: 7.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:8 colaY: 7
+algoritmo.js:159 tempx: 8 tempy: 7.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:8 colaY: 7
+algoritmo.js:159 tempx: 8 tempy: 7.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:8 colaY: 7
+algoritmo.js:159 tempx: 8 tempy: 7.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:8 colaY: 7
+algoritmo.js:159 tempx: 8 tempy: 7
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 7
+algoritmo.js:159 tempx: 8.2 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 7
+algoritmo.js:159 tempx: 8.4 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 7
+algoritmo.js:159 tempx: 8.6 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 7
+algoritmo.js:159 tempx: 8.8 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 7
+algoritmo.js:159 tempx: 9 tempy: 7
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 6
+algoritmo.js:159 tempx: 9 tempy: 6.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 6
+algoritmo.js:159 tempx: 9 tempy: 6.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 6
+algoritmo.js:159 tempx: 9 tempy: 6.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 6
+algoritmo.js:159 tempx: 9 tempy: 6.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 6
+algoritmo.js:159 tempx: 9 tempy: 6
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 5
+algoritmo.js:159 tempx: 9 tempy: 5.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 5
+algoritmo.js:159 tempx: 9 tempy: 5.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 5
+algoritmo.js:159 tempx: 9 tempy: 5.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 5
+algoritmo.js:159 tempx: 9 tempy: 5.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 5
+algoritmo.js:159 tempx: 9 tempy: 5
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 4
+algoritmo.js:159 tempx: 9 tempy: 4.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 4
+algoritmo.js:159 tempx: 9 tempy: 4.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 4
+algoritmo.js:159 tempx: 9 tempy: 4.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 4
+algoritmo.js:159 tempx: 9 tempy: 4.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 4
+algoritmo.js:159 tempx: 9 tempy: 4
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 3
+algoritmo.js:159 tempx: 9 tempy: 3.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 3
+algoritmo.js:159 tempx: 9 tempy: 3.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 3
+algoritmo.js:159 tempx: 9 tempy: 3.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 3
+algoritmo.js:159 tempx: 9 tempy: 3.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:9 colaY: 3
+algoritmo.js:159 tempx: 9 tempy: 3
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:8 colaY: 3
+algoritmo.js:159 tempx: 8.8 tempy: 3
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:8 colaY: 3
+algoritmo.js:159 tempx: 8.6 tempy: 3
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:8 colaY: 3
+algoritmo.js:159 tempx: 8.4 tempy: 3
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:8 colaY: 3
+algoritmo.js:159 tempx: 8.2 tempy: 3
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:8 colaY: 3
+algoritmo.js:159 tempx: 8 tempy: 3
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:8 colaY: 2
+algoritmo.js:159 tempx: 8 tempy: 2.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:8 colaY: 2
+algoritmo.js:159 tempx: 8 tempy: 2.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:8 colaY: 2
+algoritmo.js:159 tempx: 8 tempy: 2.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:8 colaY: 2
+algoritmo.js:159 tempx: 8 tempy: 2.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:8 colaY: 2
+algoritmo.js:159 tempx: 8 tempy: 2
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 2
+algoritmo.js:159 tempx: 7.8 tempy: 2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 2
+algoritmo.js:159 tempx: 7.6 tempy: 2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 2
+algoritmo.js:159 tempx: 7.4 tempy: 2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 2
+algoritmo.js:159 tempx: 7.2 tempy: 2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 2
+algoritmo.js:159 tempx: 7 tempy: 2
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 1
+algoritmo.js:159 tempx: 7 tempy: 1.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 1
+algoritmo.js:159 tempx: 7 tempy: 1.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 1
+algoritmo.js:159 tempx: 7 tempy: 1.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 1
+algoritmo.js:159 tempx: 7 tempy: 1.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 1
+algoritmo.js:159 tempx: 7 tempy: 1
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 2
+algoritmo.js:159 tempx: 7 tempy: 1.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 2
+algoritmo.js:159 tempx: 7 tempy: 1.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 2
+algoritmo.js:159 tempx: 7 tempy: 1.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 2
+algoritmo.js:159 tempx: 7 tempy: 1.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 2
+algoritmo.js:159 tempx: 7 tempy: 2
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 3
+algoritmo.js:159 tempx: 7 tempy: 2.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 3
+algoritmo.js:159 tempx: 7 tempy: 2.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 3
+algoritmo.js:159 tempx: 7 tempy: 2.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 3
+algoritmo.js:159 tempx: 7 tempy: 2.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 3
+algoritmo.js:159 tempx: 7 tempy: 3
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 3
+algoritmo.js:159 tempx: 6.8 tempy: 3
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 3
+algoritmo.js:159 tempx: 6.6 tempy: 3
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 3
+algoritmo.js:159 tempx: 6.4 tempy: 3
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 3
+algoritmo.js:159 tempx: 6.2 tempy: 3
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 3
+algoritmo.js:159 tempx: 6 tempy: 3
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 2
+algoritmo.js:159 tempx: 6 tempy: 2.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 2
+algoritmo.js:159 tempx: 6 tempy: 2.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 2
+algoritmo.js:159 tempx: 6 tempy: 2.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 2
+algoritmo.js:159 tempx: 6 tempy: 2.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 2
+algoritmo.js:159 tempx: 6 tempy: 2
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 2
+algoritmo.js:159 tempx: 5.8 tempy: 2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 2
+algoritmo.js:159 tempx: 5.6 tempy: 2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 2
+algoritmo.js:159 tempx: 5.4 tempy: 2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 2
+algoritmo.js:159 tempx: 5.2 tempy: 2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 2
+algoritmo.js:159 tempx: 5 tempy: 2
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 1
+algoritmo.js:159 tempx: 5 tempy: 1.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 1
+algoritmo.js:159 tempx: 5 tempy: 1.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 1
+algoritmo.js:159 tempx: 5 tempy: 1.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 1
+algoritmo.js:159 tempx: 5 tempy: 1.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 1
+algoritmo.js:159 tempx: 5 tempy: 1
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 1
+algoritmo.js:159 tempx: 4.8 tempy: 1
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 1
+algoritmo.js:159 tempx: 4.6 tempy: 1
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 1
+algoritmo.js:159 tempx: 4.4 tempy: 1
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 1
+algoritmo.js:159 tempx: 4.2 tempy: 1
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 1
+algoritmo.js:159 tempx: 4 tempy: 1
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 1
+algoritmo.js:159 tempx: 3.8 tempy: 1
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 1
+algoritmo.js:159 tempx: 3.6 tempy: 1
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 1
+algoritmo.js:159 tempx: 3.4 tempy: 1
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 1
+algoritmo.js:159 tempx: 3.2 tempy: 1
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 1
+algoritmo.js:159 tempx: 3 tempy: 1
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 1
+algoritmo.js:159 tempx: 2.8 tempy: 1
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 1
+algoritmo.js:159 tempx: 2.6 tempy: 1
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 1
+algoritmo.js:159 tempx: 2.4 tempy: 1
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 1
+algoritmo.js:159 tempx: 2.2 tempy: 1
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 1
+algoritmo.js:159 tempx: 2 tempy: 1
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 2
+algoritmo.js:159 tempx: 2 tempy: 1.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 2
+algoritmo.js:159 tempx: 2 tempy: 1.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 2
+algoritmo.js:159 tempx: 2 tempy: 1.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 2
+algoritmo.js:159 tempx: 2 tempy: 1.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 2
+algoritmo.js:159 tempx: 2 tempy: 2
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 2
+algoritmo.js:159 tempx: 2.2 tempy: 2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 2
+algoritmo.js:159 tempx: 2.4 tempy: 2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 2
+algoritmo.js:159 tempx: 2.6 tempy: 2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 2
+algoritmo.js:159 tempx: 2.8 tempy: 2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 2
+algoritmo.js:159 tempx: 3 tempy: 2
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 3
+algoritmo.js:159 tempx: 3 tempy: 2.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 3
+algoritmo.js:159 tempx: 3 tempy: 2.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 3
+algoritmo.js:159 tempx: 3 tempy: 2.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 3
+algoritmo.js:159 tempx: 3 tempy: 2.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 3
+algoritmo.js:159 tempx: 3 tempy: 3
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 4
+algoritmo.js:159 tempx: 3 tempy: 3.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 4
+algoritmo.js:159 tempx: 3 tempy: 3.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 4
+algoritmo.js:159 tempx: 3 tempy: 3.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 4
+algoritmo.js:159 tempx: 3 tempy: 3.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 4
+algoritmo.js:159 tempx: 3 tempy: 4
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 5
+algoritmo.js:159 tempx: 3 tempy: 4.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 5
+algoritmo.js:159 tempx: 3 tempy: 4.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 5
+algoritmo.js:159 tempx: 3 tempy: 4.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 5
+algoritmo.js:159 tempx: 3 tempy: 4.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 5
+algoritmo.js:159 tempx: 3 tempy: 5
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 6
+algoritmo.js:159 tempx: 3 tempy: 5.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 6
+algoritmo.js:159 tempx: 3 tempy: 5.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 6
+algoritmo.js:159 tempx: 3 tempy: 5.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 6
+algoritmo.js:159 tempx: 3 tempy: 5.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 6
+algoritmo.js:159 tempx: 3 tempy: 6
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 6
+algoritmo.js:159 tempx: 3.2 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 6
+algoritmo.js:159 tempx: 3.4 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 6
+algoritmo.js:159 tempx: 3.6 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 6
+algoritmo.js:159 tempx: 3.8 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 6
+algoritmo.js:159 tempx: 4 tempy: 6
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 6
+algoritmo.js:159 tempx: 4.2 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 6
+algoritmo.js:159 tempx: 4.4 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 6
+algoritmo.js:159 tempx: 4.6 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 6
+algoritmo.js:159 tempx: 4.8 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 6
+algoritmo.js:159 tempx: 5 tempy: 6
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 6
+algoritmo.js:159 tempx: 4.8 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 6
+algoritmo.js:159 tempx: 4.6 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 6
+algoritmo.js:159 tempx: 4.4 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 6
+algoritmo.js:159 tempx: 4.2 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 6
+algoritmo.js:159 tempx: 4 tempy: 6
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 6
+algoritmo.js:159 tempx: 3.8 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 6
+algoritmo.js:159 tempx: 3.6 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 6
+algoritmo.js:159 tempx: 3.4 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 6
+algoritmo.js:159 tempx: 3.2 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 6
+algoritmo.js:159 tempx: 3 tempy: 6
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 5
+algoritmo.js:159 tempx: 3 tempy: 5.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 5
+algoritmo.js:159 tempx: 3 tempy: 5.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 5
+algoritmo.js:159 tempx: 3 tempy: 5.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 5
+algoritmo.js:159 tempx: 3 tempy: 5.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 5
+algoritmo.js:159 tempx: 3 tempy: 5
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 4
+algoritmo.js:159 tempx: 3 tempy: 4.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 4
+algoritmo.js:159 tempx: 3 tempy: 4.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 4
+algoritmo.js:159 tempx: 3 tempy: 4.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 4
+algoritmo.js:159 tempx: 3 tempy: 4.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 4
+algoritmo.js:159 tempx: 3 tempy: 4
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 3
+algoritmo.js:159 tempx: 3 tempy: 3.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 3
+algoritmo.js:159 tempx: 3 tempy: 3.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 3
+algoritmo.js:159 tempx: 3 tempy: 3.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 3
+algoritmo.js:159 tempx: 3 tempy: 3.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 3
+algoritmo.js:159 tempx: 3 tempy: 3
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 3
+algoritmo.js:159 tempx: 3.2 tempy: 3
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 3
+algoritmo.js:159 tempx: 3.4 tempy: 3
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 3
+algoritmo.js:159 tempx: 3.6 tempy: 3
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 3
+algoritmo.js:159 tempx: 3.8 tempy: 3
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 3
+algoritmo.js:159 tempx: 4 tempy: 3
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 3
+algoritmo.js:159 tempx: 3.8 tempy: 3
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 3
+algoritmo.js:159 tempx: 3.6 tempy: 3
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 3
+algoritmo.js:159 tempx: 3.4 tempy: 3
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 3
+algoritmo.js:159 tempx: 3.2 tempy: 3
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 3
+algoritmo.js:159 tempx: 3 tempy: 3
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 4
+algoritmo.js:159 tempx: 3 tempy: 3.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 4
+algoritmo.js:159 tempx: 3 tempy: 3.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 4
+algoritmo.js:159 tempx: 3 tempy: 3.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 4
+algoritmo.js:159 tempx: 3 tempy: 3.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 4
+algoritmo.js:159 tempx: 3 tempy: 4
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 5
+algoritmo.js:159 tempx: 3 tempy: 4.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 5
+algoritmo.js:159 tempx: 3 tempy: 4.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 5
+algoritmo.js:159 tempx: 3 tempy: 4.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 5
+algoritmo.js:159 tempx: 3 tempy: 4.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 5
+algoritmo.js:159 tempx: 3 tempy: 5
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 6
+algoritmo.js:159 tempx: 3 tempy: 5.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 6
+algoritmo.js:159 tempx: 3 tempy: 5.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 6
+algoritmo.js:159 tempx: 3 tempy: 5.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 6
+algoritmo.js:159 tempx: 3 tempy: 5.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 6
+algoritmo.js:159 tempx: 3 tempy: 6
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 6
+algoritmo.js:159 tempx: 2.8 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 6
+algoritmo.js:159 tempx: 2.6 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 6
+algoritmo.js:159 tempx: 2.4 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 6
+algoritmo.js:159 tempx: 2.2 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 6
+algoritmo.js:159 tempx: 2 tempy: 6
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 5
+algoritmo.js:159 tempx: 2 tempy: 5.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 5
+algoritmo.js:159 tempx: 2 tempy: 5.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 5
+algoritmo.js:159 tempx: 2 tempy: 5.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 5
+algoritmo.js:159 tempx: 2 tempy: 5.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 5
+algoritmo.js:159 tempx: 2 tempy: 5
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 5
+algoritmo.js:159 tempx: 1.8 tempy: 5
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 5
+algoritmo.js:159 tempx: 1.6 tempy: 5
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 5
+algoritmo.js:159 tempx: 1.4 tempy: 5
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 5
+algoritmo.js:159 tempx: 1.2 tempy: 5
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 5
+algoritmo.js:159 tempx: 1 tempy: 5
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:0 colaY: 5
+algoritmo.js:159 tempx: 0.8 tempy: 5
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:0 colaY: 5
+algoritmo.js:159 tempx: 0.6 tempy: 5
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:0 colaY: 5
+algoritmo.js:159 tempx: 0.4 tempy: 5
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:0 colaY: 5
+algoritmo.js:159 tempx: 0.2 tempy: 5
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:0 colaY: 5
+algoritmo.js:159 tempx: 0 tempy: 5
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:0 colaY: 6
+algoritmo.js:159 tempx: 0 tempy: 5.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:0 colaY: 6
+algoritmo.js:159 tempx: 0 tempy: 5.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:0 colaY: 6
+algoritmo.js:159 tempx: 0 tempy: 5.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:0 colaY: 6
+algoritmo.js:159 tempx: 0 tempy: 5.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:0 colaY: 6
+algoritmo.js:159 tempx: 0 tempy: 6
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 6
+algoritmo.js:159 tempx: 0.2 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 6
+algoritmo.js:159 tempx: 0.4 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 6
+algoritmo.js:159 tempx: 0.6 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 6
+algoritmo.js:159 tempx: 0.8 tempy: 6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 6
+algoritmo.js:159 tempx: 1 tempy: 6
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 7
+algoritmo.js:159 tempx: 1 tempy: 6.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 7
+algoritmo.js:159 tempx: 1 tempy: 6.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 7
+algoritmo.js:159 tempx: 1 tempy: 6.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 7
+algoritmo.js:159 tempx: 1 tempy: 6.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 7
+algoritmo.js:159 tempx: 1 tempy: 7
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 8
+algoritmo.js:159 tempx: 1 tempy: 7.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 8
+algoritmo.js:159 tempx: 1 tempy: 7.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 8
+algoritmo.js:159 tempx: 1 tempy: 7.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 8
+algoritmo.js:159 tempx: 1 tempy: 7.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 8
+algoritmo.js:159 tempx: 1 tempy: 8
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 9
+algoritmo.js:159 tempx: 1 tempy: 8.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 9
+algoritmo.js:159 tempx: 1 tempy: 8.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 9
+algoritmo.js:159 tempx: 1 tempy: 8.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 9
+algoritmo.js:159 tempx: 1 tempy: 8.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:1 colaY: 9
+algoritmo.js:159 tempx: 1 tempy: 9
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 9
+algoritmo.js:159 tempx: 1.2 tempy: 9
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 9
+algoritmo.js:159 tempx: 1.4 tempy: 9
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 9
+algoritmo.js:159 tempx: 1.6 tempy: 9
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 9
+algoritmo.js:159 tempx: 1.8 tempy: 9
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 9
+algoritmo.js:159 tempx: 2 tempy: 9
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 9
+algoritmo.js:159 tempx: 2.2 tempy: 9
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 9
+algoritmo.js:159 tempx: 2.4 tempy: 9
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 9
+algoritmo.js:159 tempx: 2.6 tempy: 9
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 9
+algoritmo.js:159 tempx: 2.8 tempy: 9
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 9
+algoritmo.js:159 tempx: 3 tempy: 9
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 9
+algoritmo.js:159 tempx: 2.8 tempy: 9
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 9
+algoritmo.js:159 tempx: 2.6 tempy: 9
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 9
+algoritmo.js:159 tempx: 2.4 tempy: 9
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 9
+algoritmo.js:159 tempx: 2.2 tempy: 9
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 9
+algoritmo.js:159 tempx: 2 tempy: 9
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 8
+algoritmo.js:159 tempx: 2 tempy: 8.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 8
+algoritmo.js:159 tempx: 2 tempy: 8.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 8
+algoritmo.js:159 tempx: 2 tempy: 8.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 8
+algoritmo.js:159 tempx: 2 tempy: 8.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 8
+algoritmo.js:159 tempx: 2 tempy: 8
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 7
+algoritmo.js:159 tempx: 2 tempy: 7.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 7
+algoritmo.js:159 tempx: 2 tempy: 7.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 7
+algoritmo.js:159 tempx: 2 tempy: 7.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 7
+algoritmo.js:159 tempx: 2 tempy: 7.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:2 colaY: 7
+algoritmo.js:159 tempx: 2 tempy: 7
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 7
+algoritmo.js:159 tempx: 2.2 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 7
+algoritmo.js:159 tempx: 2.4 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 7
+algoritmo.js:159 tempx: 2.6 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 7
+algoritmo.js:159 tempx: 2.8 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:3 colaY: 7
+algoritmo.js:159 tempx: 3 tempy: 7
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 7
+algoritmo.js:159 tempx: 3.2 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 7
+algoritmo.js:159 tempx: 3.4 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 7
+algoritmo.js:159 tempx: 3.6 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 7
+algoritmo.js:159 tempx: 3.8 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:4 colaY: 7
+algoritmo.js:159 tempx: 4 tempy: 7
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 7
+algoritmo.js:159 tempx: 4.2 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 7
+algoritmo.js:159 tempx: 4.4 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 7
+algoritmo.js:159 tempx: 4.6 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 7
+algoritmo.js:159 tempx: 4.8 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 7
+algoritmo.js:159 tempx: 5 tempy: 7
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 7
+algoritmo.js:159 tempx: 5.2 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 7
+algoritmo.js:159 tempx: 5.4 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 7
+algoritmo.js:159 tempx: 5.6 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 7
+algoritmo.js:159 tempx: 5.8 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 7
+algoritmo.js:159 tempx: 6 tempy: 7
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 6
+algoritmo.js:159 tempx: 6 tempy: 6.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 6
+algoritmo.js:159 tempx: 6 tempy: 6.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 6
+algoritmo.js:159 tempx: 6 tempy: 6.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 6
+algoritmo.js:159 tempx: 6 tempy: 6.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 6
+algoritmo.js:159 tempx: 6 tempy: 6
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 7
+algoritmo.js:159 tempx: 6 tempy: 6.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 7
+algoritmo.js:159 tempx: 6 tempy: 6.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 7
+algoritmo.js:159 tempx: 6 tempy: 6.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 7
+algoritmo.js:159 tempx: 6 tempy: 6.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 7
+algoritmo.js:159 tempx: 6 tempy: 7
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 7
+algoritmo.js:159 tempx: 6.2 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 7
+algoritmo.js:159 tempx: 6.4 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 7
+algoritmo.js:159 tempx: 6.6 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 7
+algoritmo.js:159 tempx: 6.8 tempy: 7
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 7
+algoritmo.js:159 tempx: 7 tempy: 7
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 6
+algoritmo.js:159 tempx: 7 tempy: 6.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 6
+algoritmo.js:159 tempx: 7 tempy: 6.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 6
+algoritmo.js:159 tempx: 7 tempy: 6.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 6
+algoritmo.js:159 tempx: 7 tempy: 6.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 6
+algoritmo.js:159 tempx: 7 tempy: 6
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 5
+algoritmo.js:159 tempx: 7 tempy: 5.8
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 5
+algoritmo.js:159 tempx: 7 tempy: 5.6
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 5
+algoritmo.js:159 tempx: 7 tempy: 5.4
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 5
+algoritmo.js:159 tempx: 7 tempy: 5.2
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:7 colaY: 5
+algoritmo.js:159 tempx: 7 tempy: 5
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 5
+algoritmo.js:159 tempx: 6.8 tempy: 5
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 5
+algoritmo.js:159 tempx: 6.6 tempy: 5
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 5
+algoritmo.js:159 tempx: 6.4 tempy: 5
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 5
+algoritmo.js:159 tempx: 6.2 tempy: 5
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:6 colaY: 5
+algoritmo.js:159 tempx: 6 tempy: 5
+algoritmo.js:131 Actualizando colas
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 5
+algoritmo.js:159 tempx: 5.8 tempy: 5
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 5
+algoritmo.js:159 tempx: 5.6 tempy: 5
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 5
+algoritmo.js:159 tempx: 5.4 tempy: 5
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 5
+algoritmo.js:159 tempx: 5.2 tempy: 5
+algoritmo.js:157 Global Temp:1
+algoritmo.js:158 colaX:5 colaY: 5
+algoritmo.js:159 tempx: 5 tempy: 5
+algoritmo.js:127 GlobalTemp 0
+algoritmo.js:157 Global Temp:0
+algoritmo.js:158 colaX:5 colaY: 5
+algoritmo.js:159 tempx: 5 tempy: 5
+colaCoordenadasX.cola
+[1, 2, 3, 4, 4, 4, 4, 5, 5, 6, 6, 5, 6, 7, 7, 6, 7, 8, 8, 8, 8, 9, 9, 9, 8, 8, 7, 7, 7, 8, 8, 9, 9, 9, 9, 9, 8, 8, 7, 7, 7, 7, 6, 6, 5, 5, 4, 3, 2, 2, 3, 3, 3, 3, 3, 4, 5, 4, 3, 3, 3, 3, 4, 3, 3, 3, 3, 2, 2, 1, 0, 0, 1, 1, 1, 1, 2, 3, 2, 2, 2, 3, 4, 5, 6, 6, 6, 7, 7, 7, 6, 5]0: 11: 22: 33: 44: 45: 46: 47: 58: 59: 610: 611: 512: 613: 714: 715: 616: 717: 818: 819: 820: 821: 922: 923: 924: 825: 826: 727: 728: 729: 830: 831: 932: 933: 934: 935: 936: 837: 838: 739: 740: 741: 742: 643: 644: 545: 546: 447: 348: 249: 250: 351: 352: 353: 354: 355: 456: 557: 458: 359: 360: 361: 362: 463: 364: 365: 366: 367: 268: 269: 170: 071: 072: 173: 174: 175: 176: 277: 378: 279: 280: 281: 382: 483: 584: 685: 686: 687: 788: 789: 790: 691: 5length: 92__proto__: Array[0]
+colaCoordenadasY.cola
+[0, 0, 0, 0, 1, 2, 1, 1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 6, 5, 5, 6, 7, 7, 8, 8, 9, 8, 8, 7, 7, 6, 5, 4, 3, 3, 2, 2, 1, 2, 3, 3, 2, 2, 1, 1, 1, 1, 2, 2, 3, 4, 5, 6, 6, 6, 6, 6, 5, 4, 3, 3, 3, 4, 5, 6, 6, 5, 5, 5, 6, 6, 7, 8, 9, 9, 9, 9, 8, 7, 7, 7, 7, 7, 6, 7, 7, 6, 5, 5, 5]0: 01: 02: 03: 04: 15: 26: 17: 18: 29: 210: 311: 312: 313: 314: 415: 416: 417: 418: 519: 620: 521: 522: 623: 724: 725: 826: 827: 928: 829: 830: 731: 732: 633: 534: 435: 336: 337: 238: 239: 140: 241: 342: 343: 244: 245: 146: 147: 148: 149: 250: 251: 352: 453: 554: 655: 656: 657: 658: 659: 560: 461: 362: 363: 364: 465: 566: 667: 668: 569: 570: 571: 672: 673: 774: 875: 976: 977: 978: 979: 880: 781: 782: 783: 784: 785: 686: 787: 788: 689: 590: 591: 5length: 92__proto__: Array[0]
