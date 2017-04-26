@@ -43,6 +43,8 @@ function action() {
     globalEnd.x = 0;
     globalEnd.y = 0;
     //setup();
+    colaCoordenadasY.cola = new Array();
+    colaCoordenadasX.cola = new Array();
     iniciar_maze();
     iniciar();
 }
@@ -92,8 +94,8 @@ function borrarLaberinto() {
     globalCoord.y = 0;
     globalEnd.x = 0;
     globalEnd.y = 0;
-    colaCoordenadasY.cola= new Array();
-    colaCoordenadasX.cola= new Array();
+    colaCoordenadasY.cola = new Array();
+    colaCoordenadasX.cola = new Array();
     setup();
 }
 
