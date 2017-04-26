@@ -60,7 +60,8 @@ function actualizar(){
         setup();
     } 
     else{alert("No se han modificado las dimensiones")
-        setup();}
+        //setup();
+    }
 }
 
 function borrarLaberinto() {
@@ -91,6 +92,8 @@ function borrarLaberinto() {
     globalCoord.y = 0;
     globalEnd.x = 0;
     globalEnd.y = 0;
+    colaCoordenadasY.cola= new Array();
+    colaCoordenadasX.cola= new Array();
     setup();
 }
 
