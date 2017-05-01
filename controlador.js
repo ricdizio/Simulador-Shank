@@ -1,12 +1,12 @@
 
 
-var botonPausar = document.getElementById("pause");
+var botonDetener = document.getElementById("detener");
 var botonReiniciar = document.getElementById("reiniciar");
 var botonBorrar = document.getElementById("delete");
 var botonAction = document.getElementById("action");
 var botonUpdate = document.getElementById("update");
 var botonInstrucciones = document.getElementById("instruction");
-botonPausar.addEventListener("click",pausarSimulacion);
+botonDetener.addEventListener("click",detenerSimulacion);
 botonReiniciar.addEventListener("click",reiniciar);
 botonBorrar.addEventListener("click",borrarLaberinto);
 botonAction.addEventListener("click",action);
@@ -54,7 +54,7 @@ function action() {
         this.className = "btn btn-default btn-lg";
         botonUpdate.className = "btn btn-default btn-lg";
         botonBorrar.className = "btn btn-default btn-lg";
-        botonPausar.className = "btn btn-danger btn-lg";
+        botonDetener.className = "btn btn-danger btn-lg";
         disable = 0;
         deshabilitarBorrar = 0;
         iniciar_maze();
@@ -141,8 +141,6 @@ function reiniciar(){
     colaX = 0;	
     colaY = 0;
     colaCardinal = 4;
-    tempXDraw = 0;
-    tempYDraw = 0;
     GlobalTemp = 1;
     //X = x;
     //Y = y;
@@ -158,8 +156,10 @@ function reiniciar(){
 
     noStroke();
     fill(180);
-    rect((coord_actual_global.x*w),(coord_actual_global.y*w),w,w);
+    rect((tempXDraw*w),(tempYDraw*w),w,w);
 
+    tempXDraw = 0;
+    tempYDraw = 0;
 
     //Coordenada actual global
     coord_actual_global.x = 0;
@@ -175,8 +175,11 @@ function reiniciar(){
     PrintWalls(coordCelda);
 }
 
-function pausarSimulacion(){
-
+function detenerSimulacion(){
+	reiniciar();
+    botonBorrar.className = "btn btn-danger btn-lg";
+    botonDetener.className = "btn btn-default btn-lg";
+    deshabilitarBorrar = 1;
 }
 
 function instructiones() {

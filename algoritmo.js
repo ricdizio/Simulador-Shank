@@ -119,7 +119,6 @@ function draw(){ // este es el main
         fill(180);
         rect((tempXDraw*w),(tempYDraw*w),w,w);
         LineasGuia();
-        stroke(0);
         PrintWalls(coordCelda);
 
         if(tempXDraw==colaX && tempYDraw==colaY){
@@ -158,7 +157,7 @@ function draw(){ // este es el main
             botonAction.innerText = "Simulacion Terminada";
             botonAction.className = "btn btn-success btn-lg";
             botonBorrar.className = "btn btn-danger btn-lg";
-            botonPausar.className = "btn btn-default btn-lg";
+            botonDetener.className = "btn btn-default btn-lg";
             deshabilitarBorrar = 1;
 
         } 
