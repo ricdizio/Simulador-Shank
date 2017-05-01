@@ -1,13 +1,13 @@
 
 
 var botonPausar = document.getElementById("pause");
-var botonConsola = document.getElementById("console");
+var botonReiniciar = document.getElementById("reiniciar");
 var botonBorrar = document.getElementById("delete");
 var botonAction = document.getElementById("action");
 var botonUpdate = document.getElementById("update");
 var botonInstrucciones = document.getElementById("instruction");
 botonPausar.addEventListener("click",pausarSimulacion);
-botonConsola.addEventListener("click",abrirConsola);
+botonReiniciar.addEventListener("click",reiniciar);
 botonBorrar.addEventListener("click",borrarLaberinto);
 botonAction.addEventListener("click",action);
 botonUpdate.addEventListener("click",actualizar);
@@ -131,8 +131,48 @@ function borrarLaberinto() {
     }
 }
 
-function abrirConsola(){
+function reiniciar(){
+	frameRate(10);
+    botonAction.className = "btn btn-primary btn-lg";
+    botonAction.innerText = "Iniciar Simulacion";
+    botonUpdate.className = "btn btn-success btn-lg";
+    SimulationStart=0;
+    disable = 1;
+    colaX = 0;	
+    colaY = 0;
+    colaCardinal = 4;
+    tempXDraw = 0;
+    tempYDraw = 0;
+    GlobalTemp = 1;
+    //X = x;
+    //Y = y;
+    //destino = [ [X/2-1,Y/2-1],[X/2,Y/2-1],[X/2-1,Y/2],[X/2,Y/2] ];
 
+    // coordenada de inicio
+    inicio.x = 0;
+    inicio.y = 0;
+
+    // Cardinal
+    cardinalGlobal = 4;
+    //var cardinales= ['north','south','east','west'];
+
+    noStroke();
+    fill(180);
+    rect((coord_actual_global.x*w),(coord_actual_global.y*w),w,w);
+
+
+    //Coordenada actual global
+    coord_actual_global.x = 0;
+    coord_actual_global.y = 0;
+    globalCoord.x = 0;
+    globalCoord.y = 0;
+    globalEnd.x = 0;
+    globalEnd.y = 0;
+    colaCoordenadasY.cola = new Array();
+    colaCoordenadasX.cola = new Array();
+    imgDraw(inicio.x, inicio.y);
+    LineasGuia();
+    PrintWalls(coordCelda);
 }
 
 function pausarSimulacion(){

@@ -143,6 +143,7 @@ function UserSetWalls(){
 }
 
 function PrintWalls(objeto){
+    stroke(0);
     for(var j=0; j<n; j++){
         for(var i=0; i<m; i++){
             objeto[i][j].show();
