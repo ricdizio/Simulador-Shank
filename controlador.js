@@ -50,6 +50,7 @@ function action() {
         //setup();
         colaCoordenadasY.cola = new Array();
         colaCoordenadasX.cola = new Array();
+        colaCardinalGlobal.cola = new Array();
         this.innerText = "Simulacion iniciada";
         this.className = "btn btn-default btn-lg";
         botonUpdate.className = "btn btn-default btn-lg";
@@ -124,6 +125,7 @@ function borrarLaberinto() {
         globalEnd.y = 0;
         colaCoordenadasY.cola = new Array();
         colaCoordenadasX.cola = new Array();
+        colaCardinalGlobal.cola = new Array();
         setup();
     }
     else{
@@ -136,15 +138,15 @@ function reiniciar(){
     botonAction.className = "btn btn-primary btn-lg";
     botonAction.innerText = "Iniciar Simulacion";
     botonUpdate.className = "btn btn-success btn-lg";
+    botonBorrar.className = "btn btn-danger btn-lg";
+    botonDetener.className = "btn btn-default btn-lg";
     SimulationStart=0;
     disable = 1;
     colaX = 0;	
     colaY = 0;
     colaCardinal = 4;
     GlobalTemp = 1;
-    //X = x;
-    //Y = y;
-    //destino = [ [X/2-1,Y/2-1],[X/2,Y/2-1],[X/2-1,Y/2],[X/2,Y/2] ];
+    deshabilitarBorrar = 1;
 
     // coordenada de inicio
     inicio.x = 0;
@@ -154,12 +156,10 @@ function reiniciar(){
     cardinalGlobal = 4;
     //var cardinales= ['north','south','east','west'];
 
+    // Borramos el carrito en su ultima posicion.
     noStroke();
     fill(180);
     rect((tempXDraw*w),(tempYDraw*w),w,w);
-
-    tempXDraw = 0;
-    tempYDraw = 0;
 
     //Coordenada actual global
     coord_actual_global.x = 0;
@@ -168,8 +168,16 @@ function reiniciar(){
     globalCoord.y = 0;
     globalEnd.x = 0;
     globalEnd.y = 0;
-    colaCoordenadasY.cola = new Array();
-    colaCoordenadasX.cola = new Array();
+
+    // Vaciamos las colas ?????????????????????? Por alguna razon funciona xD!
+    while(colaCoordenadasX.isEmpty()!=1 && colaCoordenadasY.isEmpty()!=1 && colaCardinalGlobal.isEmpty()!=1){
+    	tempXDraw = colaCoordenadasX.pop();
+   		tempYDraw = colaCoordenadasY.pop();
+   		tempxDraw = colaCardinalGlobal.pop();
+    }
+
+    tempXDraw = 0;
+    tempYDraw = 0;
     imgDraw(inicio.x, inicio.y);
     LineasGuia();
     PrintWalls(coordCelda);
@@ -177,13 +185,13 @@ function reiniciar(){
 
 function detenerSimulacion(){
 	reiniciar();
-    botonBorrar.className = "btn btn-danger btn-lg";
-    botonDetener.className = "btn btn-default btn-lg";
-    deshabilitarBorrar = 1;
 }
 
 function instructiones() {
     //Body
+    alert("Leo Chupalo");
+    alert("Leo Gay");
+    alert("Ya pues chupalo Leo");
 }
 
 function capturar(){
