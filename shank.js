@@ -325,13 +325,17 @@ function terminado(coordenada, llegada){
 	for (var i = 0; i<llegada.length; i++){
 		meta[i] = new coord();
 		for (var j = 0; j<2; j++){
-			if(j==0) {meta[i].x = llegada[i][j];}
-			else {meta[i].y = llegada[i][j];}
+			if(j==0) {
+        meta[i].x = llegada[i][j];
+      }
+			else {
+        meta[i].y = llegada[i][j];
+      }
 		}
     
 	}
 	var fin = false;
-	for (var i = 0; i<4; i++) {
+	for (var i = 0; i<llegada.length; i++) {
 		var sig = new coord();
 	    sig = meta[i];
 	    if (chequear_esquina(coordenada)) {
@@ -346,37 +350,73 @@ function terminado(coordenada, llegada){
 function retorno(coordenada,global){
   for(var j = 0; j<Y; j++){
     for(var i = 0; i<X; i++){
-      maze[j][i].distancia = calcDist(i, j, coordenada.x, coordenada.y);
+      maze[j][i].distancia = calcDist(i, j, 0, 0);
     }
   }
+
+  //var puntos = [ [X/2-1,Y/2-1],[X/2,Y/2-1],[X/2-1,Y/2],[X/2,Y/2] ];
+  maze[X/2-1][Y/2-1].distancia = X*Y;
+  maze[X/2][Y/2-1].distancia = X*Y;
+  maze[X/2-1][Y/2].distancia = X*Y;
+  maze[X/2][Y/2].distancia = X*Y;
+  console.log("matriz paredes");
+  printMazewalls();
+  console.log("matriz distancia");
+  printMazedistancia();
+
+  /*
   //Entrada por Sur/Este
   if ( (global.x==(X/2))&& (global.y==(Y/2)) ){
-    maze[global.x][global.y-1].distancia = maze[global.x][global.y].distancia +1;
-    maze[global.x-1][global.y].distancia = maze[global.x][global.y].distancia +1;
-    maze[global.x-1][global.y-1].distancia = maze[global.x][global.y].distancia +2;
+    //Si entra de sur a norte
+    if(cardinalGlobal==1){
+      maze[global.x][global.y].distancia = maze[global.x][(global.y)+1].distancia + 1;
+      maze[global.x][global.y-1].distancia = maze[global.x][global.y].distancia + 1;
+      maze[global.x-1][global.y].distancia = maze[global.x][global.y].distancia + 1;
+      maze[global.x-1][global.y-1].distancia = maze[global.x][global.y].distancia + 2;
+    }
+    //Si entra de este a oeste
+    else if(cardinalGlobal==8){
+      maze[global.x][global.y].distancia = maze[global.x][(global.y)+1].distancia + 1;
+      maze[global.x][global.y-1].distancia = maze[global.x][global.y].distancia + 1;
+      maze[global.x-1][global.y].distancia = maze[global.x][global.y].distancia + 1;
+      maze[global.x-1][global.y-1].distancia = maze[global.x][global.y].distancia + 2;
+    }
   }
 
   //Entrada por Oeste/Este
-  if ( (global.x==(X/2)-1)&& (global.y==(Y/2)) ){
-    maze[global.x][global.y-1].distancia = maze[global.x][global.y].distancia +1;
+  else if( (global.x==(X/2)-1)&& (global.y==(Y/2)) ){
+
+    // si entra de sur a norte
+    if(cardinalGlobal==1){
+      maze[global.x][global.y].distancia = maze[global.x][(global.y)+1].distancia + 1;
+      maze[(global.x)+1][global.y].distancia = maze[global.x][global.y].distancia + 1;
+      maze[global.x][(global.y)-1].distancia = maze[global.x][global.y].distancia + 2;
+    }
+    else if(cardinalGlobal==1)
+    maze[global.x][global.y].distancia = maze[(global.x)+1][global.y].distancia + 1;
     maze[global.x+1][global.y].distancia = maze[global.x][global.y].distancia +1;
     maze[global.x+1][global.y-1].distancia = maze[global.x][global.y].distancia +2;
   }
   //entrada por Sur/norte
-  if ( (global.x==(X/2))&& (global.y==(Y/2)-1) ){
+  else if( (global.x==(X/2))&& (global.y==(Y/2)-1) ){
     maze[global.x][global.y+1].distancia = maze[global.x][global.y].distancia +1;
     maze[global.x-1][global.y].distancia = maze[global.x][global.y].distancia +1;
     maze[global.x-1][global.y+1].distancia = maze[global.x][global.y].distancia +2;
   }
 
   //entrada por Oeste / Norte
-  if ( (global.x==(X/2)-1)&& (global.y==(Y/2)-1) ){
+  else if( (global.x==(X/2)-1)&& (global.y==(Y/2)-1) ){
     maze[global.x][global.y+1].distancia = maze[global.x][global.y].distancia +1;
     maze[global.x+1][global.y].distancia = maze[global.x][global.y].distancia +1;
     maze[global.x+1][global.y+1].distancia = maze[global.x][global.y].distancia +2;
   }
-}
+  console.log("matriz paredes");
+  printMazewalls();
+  console.log("matriz distancia");
+  printMazedistancia();
 
+*/
+}
 /*
 function Medir (x) { 
   // Wait for user's response. 
@@ -583,19 +623,8 @@ function iniciar() {
   flood_fill(destino, globalCoord, true);
   console.log("Llegue al centro, Inicio Retorno");
  	//Nuevo punto a retorno ( Inicio)
- 	//var inicio = new coord();
- 	//inicio.x = 0;
- 	//inicio.y = 0;
- 	//retorno(inicio, globalCoord);
-  	//printMazedistancia();
-  	//flood_fill(inicio, globalCoord, true);
-  	//console.log("Termino fase de exploracion");
-  	//reflood(meta);
-  	//console.log("Comienza reflood");
-	//console.log("Imprimir Matrices resultantes");
-	//console.log("MATRIZ PAREDES");
- 	//printMazewalls();
-	//console.log("MATRIZ DISTANCIA");
-	//printMazedistancia();
+ 	var inicio = [[0,0]];
+ 	retorno(inicio, globalCoord);
+  flood_fill(inicio, globalCoord, true);
 }
 
