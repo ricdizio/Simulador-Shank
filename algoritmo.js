@@ -7,8 +7,8 @@ var ancho = 600;
 var alto = 600;
 
 
-var simulationFrames = 60;
-var noSimulationFrames = 10;
+var simulationFrameRate = 60;
+var noSimulationFrameRate = 10;
 var carSpeed = 0.05;
 
 // Tamaño de las celdas.
@@ -95,7 +95,7 @@ function setup(){
     });
 
     background(180);
-    frameRate(noSimulationFrames);
+    frameRate(noSimulationFrameRate);
 
     // Creamos los objetos.
     for(var i=0; i<m; i++){

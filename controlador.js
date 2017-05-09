@@ -25,7 +25,7 @@ var deshabilitarBorrar = 1;
 
 function action() {
     if(disable==1){
-    	frameRate(simulationFrames);
+    	frameRate(simulationFrameRate);
 
     	simulationStart=1;
         X = x;
@@ -81,7 +81,10 @@ function actualizar(){
             Y = y;
             setup();
         } 
-        else{alert("No se han modificado las dimensiones")
+        else{
+        	x = tempX;
+        	y = tempY;
+        	alert("No se han modificado las dimensiones");
             //setup();
         }
     }
@@ -134,7 +137,7 @@ function borrarLaberinto() {
 }
 
 function reiniciar(){
-	frameRate(noSimulationFrames);
+	frameRate(noSimulationFrameRate);
     botonAction.className = "btn btn-primary btn-lg";
     botonAction.innerText = "Iniciar Simulacion";
     botonUpdate.className = "btn btn-success btn-lg";
