@@ -109,6 +109,7 @@ function borderWalls(coordCelda){
 	}
 }
 
+// En esta funcion el usuario introduce las paredes que quiere.
 function userSetWalls(){
     if(mouseIsPressed && mouseX>=0 && mouseX<ancho && mouseY>=0 && mouseY<alto){ // Con estas condiciones garantizamos que no exista un error al clickear fuera del canvas.
         var i = Math.floor(mouseY / w);
