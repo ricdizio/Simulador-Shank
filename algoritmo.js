@@ -2,19 +2,24 @@
 var m = 6; // Filas.
 var n = 6; // Columnas.
 
-// Propiedades graficas del canvas. (800x800 como tamaño estandar).
+// Propiedades graficas del canvas. (600x600 como tamaño estandar).
 var ancho = 600;
 var alto = 600;
+
+
+var simulationFrames = 60;
+var noSimulationFrames = 10;
+var carSpeed = 0.05;
 
 // Tamaño de las celdas.
 var w;
 var img;
-var SimulationStart=0;
+var simulationStart = 0;
 var colaX = 0;
 var colaY = 0;
 var tempXDraw = 0;
 var tempYDraw = 0;
-var GlobalTemp = 1;
+var globalTemp = 1;
 var colaCardinal = 4;
 /*
 0: [0,0,0,0];
@@ -63,7 +68,6 @@ var MazeWalls = [
 ];*/
 
 
-// Revisar los m y n.
 var coordCelda = new Array();
     for(var i=0; i< m; i++){
         coordCelda[i]= new Array();
@@ -83,14 +87,16 @@ function setup(){
     }
 
     var canvas = createCanvas(ancho+1,alto+1);
-
     canvas.parent('canvas-position');
-    w = AdjustCells();
+    w = adjustCells();
+
     loadImage("./shankEste.png", function(img) {
         imgDraw(0,0); 
     });
+
     background(180);
-    frameRate(10);
+    frameRate(noSimulationFrames);
+
     // Creamos los objetos.
     for(var i=0; i<m; i++){
         for(var j=0; j<n; j++){
@@ -99,35 +105,34 @@ function setup(){
         }
     }
     // Posicion actual del carrito.
-    //actual = coordCelda[0][0];
+    // actual = coordCelda[0][0];
     // Dibujamos las lineas guias para que el usuario dibuje su laberinto.
-    LineasGuia();
+    guidelines();
     stroke(0);
-    BorderWalls(coordCelda);
-    PrintWalls(coordCelda);
+    borderWalls(coordCelda);
+    printWalls(coordCelda);
 }
 
 
 function draw(){ // este es el main
     // Llamamos la funcion que permite al usuario dibujar el laberinto.
-    // Esta funcion de UserSetWalls debe estar en un while hasta que presionemos un boton (aun no he creado eso).
-    UserSetWalls(coordCelda);
+    userSetWalls(coordCelda);
 
-    if(SimulationStart==1  && GlobalTemp==1){
+    if(simulationStart==1  && globalTemp==1){
         // Borrar celda vieja.
         noStroke();
         fill(180);
         rect((tempXDraw*w),(tempYDraw*w),w,w);
-        LineasGuia();
-        PrintWalls(coordCelda);
+        guidelines();
+        printWalls(coordCelda);
 
+        // Actualizamos las variables colaX y colaY.
         if(tempXDraw==colaX && tempYDraw==colaY){
+        	// Si la cola esta vacia, terminamos la simulacion.
             if(colaCoordenadasX.isEmpty()==1) {
-                console.log("GlobalTemp 0");
-                GlobalTemp=0;
+                globalTemp=0;
             }
             else{
-                console.log("Actualizando colas");
                 colaX = colaCoordenadasX.pop();
                 colaY = colaCoordenadasY.pop();
                 colaCardinal = colaCardinalGlobal.pop();
@@ -135,42 +140,43 @@ function draw(){ // este es el main
         }
 
         if(tempXDraw!=colaX){
-            GlobalTemp=1;
+        	// Se coloca este globalTemp = 1 porque si no, cuando la cola este vacia va a terminar instantaneamente la simulacion, y aun le falta el ultimo paso.
+            globalTemp=1;
             if(tempXDraw<colaX){
-                tempXDraw = Math.round((tempXDraw + 0.2)*100)/100;
+            	// Se multiplica y divide entre 100 para evitar problemas con decimales (0.6000000001 por ejemplo).
+                tempXDraw = Math.round((tempXDraw + carSpeed)*100)/100;
             }
             else{
-                tempXDraw = Math.round((tempXDraw - 0.2)*100)/100;
+                tempXDraw = Math.round((tempXDraw - carSpeed)*100)/100;
             }
         }
+
         if(tempYDraw!=colaY){
-            GlobalTemp=1;
+            globalTemp=1;
             if(tempYDraw<colaY){
-                tempYDraw = Math.round((tempYDraw + 0.2)*100)/100;
+                tempYDraw = Math.round((tempYDraw + carSpeed)*100)/100;
             }
             else{
-                tempYDraw = Math.round((tempYDraw - 0.2)*100)/100;
+                tempYDraw = Math.round((tempYDraw - carSpeed)*100)/100;
             }
         }
-        if(GlobalTemp==0 && colaX != 0 && colaY != 0){
-            alert("Llegaste al centro del laberinto"); // Cuidado con el 0 0
+
+        if(globalTemp==0 && colaX == 0 && colaY == 0){
+            alert("Completaste el laberinto!");
             botonAction.innerText = "Simulacion Terminada";
             botonAction.className = "btn btn-success btn-lg";
             botonBorrar.className = "btn btn-danger btn-lg";
             botonDetener.className = "btn btn-default btn-lg";
             deshabilitarBorrar = 1;
+        }
 
-        } 
-        console.log("Global Temp:" + GlobalTemp);
-        console.log("colaX:" + colaX + " colaY: " + colaY);
-        console.log("tempx: " + tempXDraw + " tempy: " + tempYDraw);
+        // Actualizamos la posicion del carrito.
         imgDraw(tempYDraw, tempXDraw);
     }
-
-    // Resolver el laberinto.
 }
 
-function LineasGuia(){
+function guidelines(){
+	// Dibujamos las lineas guia en todo el laberinto (las paredes blancas).
     stroke(255); // Lineas blancas.
     for(var i=0; i<m; i++){
         for(var j=0; j<n; j++){
@@ -185,6 +191,7 @@ function LineasGuia(){
 }
 
 
+// Dibujamos el carrito dependiendo de su direccion.
 function imgDraw(i,j){
     if(colaCardinal == 1){
         imgNorte.resize(w, w);
@@ -202,7 +209,6 @@ function imgDraw(i,j){
         imgOeste.resize(w, w);
         image(imgOeste, j*w, i*w);    
     }
-  
 }
 
 

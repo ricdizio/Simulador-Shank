@@ -25,9 +25,9 @@ var deshabilitarBorrar = 1;
 
 function action() {
     if(disable==1){
-    	frameRate(5);
+    	frameRate(simulationFrames);
 
-    	SimulationStart=1;
+    	simulationStart=1;
         X = x;
         Y = y;
         destino = [ [X/2-1,Y/2-1],[X/2,Y/2-1],[X/2-1,Y/2],[X/2,Y/2] ];
@@ -96,14 +96,14 @@ function borrarLaberinto() {
         botonAction.className = "btn btn-primary btn-lg";
         botonAction.innerText = "Iniciar Simulacion";
         botonUpdate.className = "btn btn-success btn-lg";
-        SimulationStart=0;
+        simulationStart=0;
         disable = 1;
         colaX = 0;
         colaY = 0;
         colaCardinal = 4;
         tempXDraw = 0;
         tempYDraw = 0;
-        GlobalTemp = 1;
+        globalTemp = 1;
         X = x;
         Y = y;
         destino = [ [X/2-1,Y/2-1],[X/2,Y/2-1],[X/2-1,Y/2],[X/2,Y/2] ];
@@ -134,18 +134,18 @@ function borrarLaberinto() {
 }
 
 function reiniciar(){
-	frameRate(10);
+	frameRate(noSimulationFrames);
     botonAction.className = "btn btn-primary btn-lg";
     botonAction.innerText = "Iniciar Simulacion";
     botonUpdate.className = "btn btn-success btn-lg";
     botonBorrar.className = "btn btn-danger btn-lg";
     botonDetener.className = "btn btn-default btn-lg";
-    SimulationStart=0;
+    simulationStart=0;
     disable = 1;
     colaX = 0;	
     colaY = 0;
     colaCardinal = 4;
-    GlobalTemp = 1;
+    globalTemp = 1;
     deshabilitarBorrar = 1;
 
     // coordenada de inicio
@@ -179,8 +179,8 @@ function reiniciar(){
     tempXDraw = 0;
     tempYDraw = 0;
     imgDraw(inicio.x, inicio.y);
-    LineasGuia();
-    PrintWalls(coordCelda);
+    guidelines();
+    printWalls(coordCelda);
 }
 
 function detenerSimulacion(){
@@ -205,7 +205,7 @@ function capturar(){
     if (x == "" || y == "")
     {
         bool = 0;
-        alert("Dimensiones por defecto X:6 , Y:6");
+        //alert("Dimensiones por defecto X:6 , Y:6");
     }
     else if((tempY == x && tempX == x))
     {
@@ -213,7 +213,7 @@ function capturar(){
     }
     else
     {
-        alert("valor X: "+ x +" valor X: " + y);
+        //alert("valor X: "+ x +" valor X: " + y);
         bool = 1;
     }
     //console.log("valores x= "+x+" y= "+y);

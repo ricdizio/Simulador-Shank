@@ -23,7 +23,7 @@ function Celda(i,j){
 }
 
 
-function AdjustCells(){
+function adjustCells(){
 	// Ajustamos la dimension de las celdas, eligiendo la mas pequeña segun el tamaño del laberinto.
     var wx = Math.floor(ancho / m);
     var wy = Math.floor(alto / n);

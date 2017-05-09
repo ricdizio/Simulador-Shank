@@ -70,35 +70,36 @@ N--- = 14
 ---- = 15
 */
 
-function CheckWall(Pared){
+function checkWall(Pared){
     //N,E,S,W
-    if(CompareArrays(Pared,[0,0,0,0])) return 15;
-    if(CompareArrays(Pared,[0,0,0,1])) return 7;
-    if(CompareArrays(Pared,[0,0,1,0])) return 13;
-    if(CompareArrays(Pared,[0,0,1,1])) return 5;
-    if(CompareArrays(Pared,[0,1,0,0])) return 11;
-    if(CompareArrays(Pared,[0,1,0,1])) return 3;
-    if(CompareArrays(Pared,[0,1,1,0])) return 9;
-    if(CompareArrays(Pared,[0,1,1,1])) return 1;
-    if(CompareArrays(Pared,[1,0,0,0])) return 14;
-    if(CompareArrays(Pared,[1,0,0,1])) return 6;
-    if(CompareArrays(Pared,[1,0,1,0])) return 12;
-    if(CompareArrays(Pared,[1,0,1,1])) return 4;
-    if(CompareArrays(Pared,[1,1,0,0])) return 10;
-    if(CompareArrays(Pared,[1,1,0,1])) return 2;
-    if(CompareArrays(Pared,[1,1,1,0])) return 8;
-    if(CompareArrays(Pared,[1,1,1,1])) return 0;
+    if(compareArrays(Pared,[0,0,0,0])) return 15;
+    if(compareArrays(Pared,[0,0,0,1])) return 7;
+    if(compareArrays(Pared,[0,0,1,0])) return 13;
+    if(compareArrays(Pared,[0,0,1,1])) return 5;
+    if(compareArrays(Pared,[0,1,0,0])) return 11;
+    if(compareArrays(Pared,[0,1,0,1])) return 3;
+    if(compareArrays(Pared,[0,1,1,0])) return 9;
+    if(compareArrays(Pared,[0,1,1,1])) return 1;
+    if(compareArrays(Pared,[1,0,0,0])) return 14;
+    if(compareArrays(Pared,[1,0,0,1])) return 6;
+    if(compareArrays(Pared,[1,0,1,0])) return 12;
+    if(compareArrays(Pared,[1,0,1,1])) return 4;
+    if(compareArrays(Pared,[1,1,0,0])) return 10;
+    if(compareArrays(Pared,[1,1,0,1])) return 2;
+    if(compareArrays(Pared,[1,1,1,0])) return 8;
+    if(compareArrays(Pared,[1,1,1,1])) return 0;
 }
 
-
-function CompareArrays(a,b){
+// Compara dos arreglos, si son verdaderos returna true.
+function compareArrays(a,b){
     for(var i=0; i<a.length; i++){
         if(a[i]!=b[i]) return false;
     }
     return true;
 }
 
-function BorderWalls(coordCelda){
+// Asigna a las paredes del borde del laberinto como 1 (pareces colocadas).
+function borderWalls(coordCelda){
 	for(var i=0;i<m; i++){
 		coordCelda[i][0].walls[3] = 1;
 		coordCelda[0][i].walls[0] = 1;
@@ -107,11 +108,11 @@ function BorderWalls(coordCelda){
 	}
 }
 
-function UserSetWalls(){
+function userSetWalls(){
     if(mouseIsPressed && mouseX>=0 && mouseX<ancho && mouseY>=0 && mouseY<alto){ // Con estas condiciones garantizamos que no exista un error al clickear fuera del canvas.
         var i = Math.floor(mouseY / w);
         var j = Math.floor(mouseX / w);
-        console.log(mouseX + ' ' + mouseY);
+
         // Dividimos imaginariamente cada casilla en 4 sectores. Si clickeamos dentro de uno de esos sectores, se marca la linea correspondiente a este sector. Cada sector mide w/4 de longitud.
         // Revisamos donde se clickeo utilizando las variables del mouse. Al mismo tiempo, si por ejemplo hay pared en la parte superior de la casilla, en la casilla de arriba debera haber pared en su lado inferior.
         // Para este ultimo caso tomamos en cuenta los casos en el borde del canvas, con cada if() dentro de las asignaciones.
@@ -136,13 +137,14 @@ function UserSetWalls(){
             coordCelda[i][j].walls[3]=!coordCelda[i][j].walls[3];
             if(j>0) coordCelda[i][j-1].walls[1]=!coordCelda[i][j-1].walls[1];
         }
-        LineasGuia();
+        guidelines();
         stroke(0);
-        PrintWalls(coordCelda);
+        printWalls(coordCelda);
     }
 }
 
-function PrintWalls(objeto){
+// Imprime las paredes asignadas por el usuario.
+function printWalls(objeto){
     stroke(0);
     for(var j=0; j<n; j++){
         for(var i=0; i<m; i++){

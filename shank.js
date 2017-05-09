@@ -254,7 +254,7 @@ OUTOUT: Retorna un int que indica las paredes de la casilla actual
 function Haypared() {
   // Intercambiar x  por y si no funciona
   console.log("global en x: "+coord_actual_global.x + " global en y: " + coord_actual_global.y);
-  var casilla = CheckWall(coordCelda[coord_actual_global.y][coord_actual_global.x].walls);
+  var casilla = checkWall(coordCelda[coord_actual_global.y][coord_actual_global.x].walls);
   return casilla;
 }
 
