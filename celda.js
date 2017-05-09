@@ -3,7 +3,7 @@ function Celda(i,j){
     this.j=j;
     this.walls = [0,0,0,0]; // 1 hay pared, 0 no. ARRIBA, DERECHA, ABAJO, IZQUIERDA
 
-
+    // Si la celda especifica es 1, la dibujamos.
     this.show= function(){
         var x = this.j*w;
         var y = this.i*w;
