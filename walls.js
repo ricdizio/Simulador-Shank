@@ -70,6 +70,7 @@ N--- = 14
 ---- = 15
 */
 
+// Comparamos todo esto porque el simulador y el shank usan posicionamiento de cardinales distintos.
 function checkWall(Pared){
     //N,E,S,W
     if(compareArrays(Pared,[0,0,0,0])) return 15;
